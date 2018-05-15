@@ -1668,22 +1668,40 @@
   }
 }
 
-.open-menu-nav {
-  position: relative;
-  width: 54px;
-  height: 50px;
-  background: url(../img/navIcons_mobile_2x.png) no-repeat;
-  background-position: -398px -71px;
-  background-size: 900px;
-  margin-bottom: -2px;
+#superTint {
+  background: transparent;
+  display: block;
+  height: 100%;
+  left: 0;
+  transition: all 300ms;
+  opacity: 0.75;
+  position: fixed;
+  top: 0;
+  visibility: hidden;
+  width: 100%;
+  z-index: 110;
+}
+.siteNavOpen #superTint {
+  background: black;
+  visibility: visible;
 }
 
-.open-dealer-nav {
-  position: relative;
-  width: 54px;
-  height: 50px;
-  background: url(../img/navIcons_mobile_2x.png) no-repeat;
-  background-position: -396px -135px;
-  background-size: 900px;
-  margin-bottom: -2px;
-}
+//.open-menu-nav {
+//  position: relative;
+//  width: 54px;
+//  height: 50px;
+//  background: url(../img/navIcons_mobile_2x.png) no-repeat;
+//  background-position: -398px -71px;
+//  background-size: 900px;
+//  margin-bottom: -2px;
+//}
+//
+//.open-dealer-nav {
+//  position: relative;
+//  width: 54px;
+//  height: 50px;
+//  background: url(../img/navIcons_mobile_2x.png) no-repeat;
+//  background-position: -396px -135px;
+//  background-size: 900px;
+//  margin-bottom: -2px;
+//}
