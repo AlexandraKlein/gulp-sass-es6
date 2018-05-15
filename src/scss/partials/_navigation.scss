@@ -30,7 +30,7 @@ $black: black;
   top: 0;
   z-index: 8000;
   -webkit-backface-visibility: hidden !important;
-  *zoom: 1;
+  zoom: 1;
   -webkit-box-shadow: 10px 0 30px $black_15;
   -moz-box-shadow: 10px 0 30px $black_15;
   box-shadow: 10px 0 30px $black_15;
@@ -924,7 +924,7 @@ $black: black;
 }
 .navigation-mobile {
   .navigation-mobile-top-nav {
-    *zoom: 1;
+    zoom: 1;
     background-color: $white;
     height: 60px;
     position: relative;
