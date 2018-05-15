@@ -3,3 +3,4 @@ dist/
 css/
 *.log
 .sass-cache/
+.idea
