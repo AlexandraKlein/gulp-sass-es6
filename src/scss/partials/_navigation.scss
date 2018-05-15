@@ -805,6 +805,7 @@
 }
 .navigation-mobile .navigation-mobile-menu-nav.visible {
   transform: translatex(0);
+  background-color: #EEE;
 }
 .navigation-mobile .navigation-mobile-menu-nav .scrollable {
   position: absolute;
@@ -823,6 +824,7 @@
   font-size: 17px;
   text-transform: uppercase;
   border-bottom: 1px solid #EEE;
+  background-color: #fff;
   padding: 18px 14px;
   text-decoration: none;
   font-family: "Black", sans-serif;
@@ -956,6 +958,7 @@
   color: #808588;
   font-size: 12px;
   text-transform: uppercase;
+  text-decoration: none;
 }
 .navigation-mobile .navigation-mobile-menu-nav ul.bottom {
   margin: 0;
