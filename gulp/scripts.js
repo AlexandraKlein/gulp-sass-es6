@@ -45,5 +45,5 @@ gulp.task('scripts_dist', () => {
         .pipe(rename({
             suffix: '.min'
         }))
-        .pipe(gulp.dest(global.paths.dist));
+      .pipe(gulp.dest(`${global.paths.dist}/js`));
 });

@@ -36,5 +36,5 @@ gulp.task('sass_dist', () => {
         .pipe(rename({
             suffix: '.min'
         }))
-        .pipe(gulp.dest(global.paths.dist));
+      .pipe(gulp.dest(`${global.paths.dist}/css`))
 });

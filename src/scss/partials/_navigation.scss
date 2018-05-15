@@ -6,7 +6,7 @@
   top: 0;
   z-index: 8000;
   -webkit-backface-visibility: hidden !important;
-  *zoom: 1;
+  zoom: 1;
   -webkit-box-shadow: 10px 0px 30px rgba(0, 0, 0, 0.15);
   -moz-box-shadow: 10px 0px 30px rgba(0, 0, 0, 0.15);
   box-shadow: 10px 0px 30px rgba(0, 0, 0, 0.15);
@@ -16,20 +16,24 @@
   -o-transition: left 300ms;
   transition: left 300ms;
 }
-.navigation-desktop:before,
-.navigation-desktop:after {
+.navigation-desktop:before {
   display: table;
   content: "";
   line-height: 0;
 }
 .navigation-desktop:after {
+  display: table;
+  content: "";
+  line-height: 0;
   clear: both;
 }
+
 .siteNavOpen .navigation-desktop {
   left: 0;
   z-index: 10000;
   -webkit-backface-visibility: hidden !important;
 }
+
 .navigation-desktop #hiddenNav {
   width: 235px;
   height: 100%;
@@ -37,29 +41,9 @@
   position: relative;
   border-right: 1px solid #e7eaec;
   -webkit-backface-visibility: hidden !important;
-  /*overflow-y: auto;*/
-
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-}
-.navigation-desktop #hiddenNav .liveChat {
-  display: block;
-  width: 160px;
-  height: 36px;
-  margin: 40px auto 0 32px;
-  background: #f7f7f7 url('../img/chatIcon.png') 108px 10px no-repeat;
-  color: #01b1ec;
-  font-size: 12px;
-  text-transform: uppercase;
-  text-decoration: none;
-  -webkit-border-radius: 40px;
-  -moz-border-radius: 40px;
-  border-radius: 40px;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  padding: 14px 42px;
 }
 .navigation-desktop #hiddenNav .searchForm {
   margin: 0;
@@ -92,7 +76,7 @@
   top: 3px;
   right: 40px;
   border: none;
-  background: transparent url('../img/navIcons_1x.png') -30px -343px;
+  background: transparent url("../img/navIcons_1x.png") -30px -343px;
   text-indent: -9999px;
 }
 .navigation-desktop #hiddenNav ul {
@@ -100,10 +84,7 @@
   margin: 36px 0 0;
   padding: 0;
 }
-.navigation-desktop #hiddenNav ul li.absorbed.hidden {
-  display: none;
-}
-.navigation-desktop #hiddenNav ul li > :not(a) {
+.navigation-desktop #hiddenNav ul li.absorbed.hidden, .navigation-desktop #hiddenNav ul li > :not(a) {
   display: none;
 }
 .navigation-desktop #hiddenNav ul li a {
@@ -125,7 +106,7 @@
   color: #444 !important;
 }
 .navigation-desktop #hiddenNav ul li a .icon {
-  background: transparent url('../img/navIcons_1x.png');
+  background: transparent url("../img/navIcons_1x.png");
   display: inline-block;
   width: 55px;
   height: 60px;
@@ -135,36 +116,25 @@
 .navigation-desktop #hiddenNav ul li a:hover {
   background-color: #f1f5f6;
 }
-.navigation-desktop #hiddenNav ul li a:active,
-.navigation-desktop #hiddenNav ul li a.active {
+.navigation-desktop #hiddenNav ul li a:active, .navigation-desktop #hiddenNav ul li a.active {
   background-color: transparent;
 }
-.navigation-desktop #hiddenNav ul li a.specialOffers .icon,
-.navigation-desktop #hiddenNav ul li a.special-offers .icon {
+.navigation-desktop #hiddenNav ul li a.specialOffers .icon, .navigation-desktop #hiddenNav ul li a.special-offers .icon {
   background-position: 0px -490px;
 }
-.navigation-desktop #hiddenNav ul li a.specialOffers:hover .icon,
-.navigation-desktop #hiddenNav ul li a.special-offers:hover .icon {
+.navigation-desktop #hiddenNav ul li a.specialOffers:hover .icon, .navigation-desktop #hiddenNav ul li a.special-offers:hover .icon {
   background-position: -80px -490px;
 }
-.navigation-desktop #hiddenNav ul li a.specialOffers:active .icon,
-.navigation-desktop #hiddenNav ul li a.special-offers:active .icon,
-.navigation-desktop #hiddenNav ul li a.specialOffers.active .icon,
-.navigation-desktop #hiddenNav ul li a.special-offers.active .icon {
+.navigation-desktop #hiddenNav ul li a.specialOffers:active .icon, .navigation-desktop #hiddenNav ul li a.special-offers:active .icon, .navigation-desktop #hiddenNav ul li a.specialOffers.active .icon, .navigation-desktop #hiddenNav ul li a.special-offers.active .icon {
   background-position: -160px -490px;
 }
-.navigation-desktop #hiddenNav ul li a.financialServices .icon,
-.navigation-desktop #hiddenNav ul li a.financial-services .icon {
+.navigation-desktop #hiddenNav ul li a.financialServices .icon, .navigation-desktop #hiddenNav ul li a.financial-services .icon {
   background-position: 0px -572px;
 }
-.navigation-desktop #hiddenNav ul li a.financialServices:hover .icon,
-.navigation-desktop #hiddenNav ul li a.financial-services:hover .icon {
+.navigation-desktop #hiddenNav ul li a.financialServices:hover .icon, .navigation-desktop #hiddenNav ul li a.financial-services:hover .icon {
   background-position: -80px -572px;
 }
-.navigation-desktop #hiddenNav ul li a.financialServices:active .icon,
-.navigation-desktop #hiddenNav ul li a.financial-services:active .icon,
-.navigation-desktop #hiddenNav ul li a.financialServices.active .icon,
-.navigation-desktop #hiddenNav ul li a.financial-services.active .icon {
+.navigation-desktop #hiddenNav ul li a.financialServices:active .icon, .navigation-desktop #hiddenNav ul li a.financial-services:active .icon, .navigation-desktop #hiddenNav ul li a.financialServices.active .icon, .navigation-desktop #hiddenNav ul li a.financial-services.active .icon {
   background-position: -160px -572px;
 }
 .navigation-desktop #hiddenNav ul li a.me .icon {
@@ -173,8 +143,7 @@
 .navigation-desktop #hiddenNav ul li a.me:hover .icon {
   background-position: -80px -174px;
 }
-.navigation-desktop #hiddenNav ul li a.me:active .icon,
-.navigation-desktop #hiddenNav ul li a.me.active .icon {
+.navigation-desktop #hiddenNav ul li a.me:active .icon, .navigation-desktop #hiddenNav ul li a.me.active .icon {
   background-position: -160px -174px;
 }
 .navigation-desktop #hiddenNav ul li a.certified-pre-owned .icon {
@@ -183,22 +152,16 @@
 .navigation-desktop #hiddenNav ul li a.certified-pre-owned:hover .icon {
   background-position: -80px -1151px;
 }
-.navigation-desktop #hiddenNav ul li a.certified-pre-owned:active .icon,
-.navigation-desktop #hiddenNav ul li a.certified-pre-owned.active .icon {
+.navigation-desktop #hiddenNav ul li a.certified-pre-owned:active .icon, .navigation-desktop #hiddenNav ul li a.certified-pre-owned.active .icon {
   background-position: -160px -1151px;
 }
-.navigation-desktop #hiddenNav ul li a.socialNews .icon,
-.navigation-desktop #hiddenNav ul li a.social-news .icon {
+.navigation-desktop #hiddenNav ul li a.socialNews .icon, .navigation-desktop #hiddenNav ul li a.social-news .icon {
   background-position: 0px -728px;
 }
-.navigation-desktop #hiddenNav ul li a.socialNews:hover .icon,
-.navigation-desktop #hiddenNav ul li a.social-news:hover .icon {
+.navigation-desktop #hiddenNav ul li a.socialNews:hover .icon, .navigation-desktop #hiddenNav ul li a.social-news:hover .icon {
   background-position: -80px -728px;
 }
-.navigation-desktop #hiddenNav ul li a.socialNews:active .icon,
-.navigation-desktop #hiddenNav ul li a.social-news:active .icon,
-.navigation-desktop #hiddenNav ul li a.socialNews.active .icon,
-.navigation-desktop #hiddenNav ul li a.social-news.active .icon {
+.navigation-desktop #hiddenNav ul li a.socialNews:active .icon, .navigation-desktop #hiddenNav ul li a.social-news:active .icon, .navigation-desktop #hiddenNav ul li a.socialNews.active .icon, .navigation-desktop #hiddenNav ul li a.social-news.active .icon {
   background-position: -160px -728px;
 }
 .navigation-desktop #hiddenNav ul li a.corporate .icon {
@@ -207,8 +170,7 @@
 .navigation-desktop #hiddenNav ul li a.corporate:hover .icon {
   background-position: -80px -811px;
 }
-.navigation-desktop #hiddenNav ul li a.corporate:active .icon,
-.navigation-desktop #hiddenNav ul li a.corporate.active .icon {
+.navigation-desktop #hiddenNav ul li a.corporate:active .icon, .navigation-desktop #hiddenNav ul li a.corporate.active .icon {
   background-position: -160px -811px;
 }
 .navigation-desktop #hiddenNav ul li a.newsroom .icon {
@@ -217,8 +179,7 @@
 .navigation-desktop #hiddenNav ul li a.newsroom:hover .icon {
   background-position: -80px -983px;
 }
-.navigation-desktop #hiddenNav ul li a.newsroom:active .icon,
-.navigation-desktop #hiddenNav ul li a.newsroom.active .icon {
+.navigation-desktop #hiddenNav ul li a.newsroom:active .icon, .navigation-desktop #hiddenNav ul li a.newsroom.active .icon {
   background-position: -160px -983px;
 }
 .navigation-desktop #hiddenNav ul li a.contact .icon {
@@ -227,8 +188,7 @@
 .navigation-desktop #hiddenNav ul li a.contact:hover .icon {
   background-position: -80px -892px;
 }
-.navigation-desktop #hiddenNav ul li a.contact:active .icon,
-.navigation-desktop #hiddenNav ul li a.contact.active .icon {
+.navigation-desktop #hiddenNav ul li a.contact:active .icon, .navigation-desktop #hiddenNav ul li a.contact.active .icon {
   background-position: -160px -892px;
 }
 .navigation-desktop #hiddenNav ul li a.owners .icon {
@@ -237,22 +197,16 @@
 .navigation-desktop #hiddenNav ul li a.owners:hover .icon {
   background-position: -86px -648px;
 }
-.navigation-desktop #hiddenNav ul li a.owners:active .icon,
-.navigation-desktop #hiddenNav ul li a.owners.active .icon {
+.navigation-desktop #hiddenNav ul li a.owners:active .icon, .navigation-desktop #hiddenNav ul li a.owners.active .icon {
   background-position: -172px -648px;
 }
-.navigation-desktop #hiddenNav ul li a.findADealer .icon,
-.navigation-desktop #hiddenNav ul li a.find-a-dealer .icon {
+.navigation-desktop #hiddenNav ul li a.findADealer .icon, .navigation-desktop #hiddenNav ul li a.find-a-dealer .icon {
   background-position: 0px -1070px;
 }
-.navigation-desktop #hiddenNav ul li a.findADealer:hover .icon,
-.navigation-desktop #hiddenNav ul li a.find-a-dealer:hover .icon {
+.navigation-desktop #hiddenNav ul li a.findADealer:hover .icon, .navigation-desktop #hiddenNav ul li a.find-a-dealer:hover .icon {
   background-position: -80px -1070px;
 }
-.navigation-desktop #hiddenNav ul li a.findADealer:active .icon,
-.navigation-desktop #hiddenNav ul li a.find-a-dealer:active .icon,
-.navigation-desktop #hiddenNav ul li a.findADealer.active .icon,
-.navigation-desktop #hiddenNav ul li a.find-a-dealer.active .icon {
+.navigation-desktop #hiddenNav ul li a.findADealer:active .icon, .navigation-desktop #hiddenNav ul li a.find-a-dealer:active .icon, .navigation-desktop #hiddenNav ul li a.findADealer.active .icon, .navigation-desktop #hiddenNav ul li a.find-a-dealer.active .icon {
   background-position: -160px -1070px;
 }
 .navigation-desktop #hiddenNav ul li a.build-your-own .icon {
@@ -261,8 +215,7 @@
 .navigation-desktop #hiddenNav ul li a.build-your-own:hover .icon {
   background-position: -80px -404px;
 }
-.navigation-desktop #hiddenNav ul li a.build-your-own:active .icon,
-.navigation-desktop #hiddenNav ul li a.build-your-own.active .icon {
+.navigation-desktop #hiddenNav ul li a.build-your-own:active .icon, .navigation-desktop #hiddenNav ul li a.build-your-own.active .icon {
   background-position: -162px -404px;
 }
 .navigation-desktop #hiddenNav ul li a.find-a-match .icon {
@@ -271,8 +224,7 @@
 .navigation-desktop #hiddenNav ul li a.find-a-match:hover .icon {
   background-position: -81px -89px;
 }
-.navigation-desktop #hiddenNav ul li a.find-a-match:active .icon,
-.navigation-desktop #hiddenNav ul li a.find-a-match.active .icon {
+.navigation-desktop #hiddenNav ul li a.find-a-match:active .icon, .navigation-desktop #hiddenNav ul li a.find-a-match.active .icon {
   background-position: -164px -77px;
 }
 .navigation-desktop #hiddenNav ul li a.models .icon {
@@ -281,171 +233,11 @@
 .navigation-desktop #hiddenNav ul li a.models:hover .icon {
   background-position: -52px 0px;
 }
-.navigation-desktop #hiddenNav ul li a.models:active .icon,
-.navigation-desktop #hiddenNav ul li a.models.active .icon {
+.navigation-desktop #hiddenNav ul li a.models:active .icon, .navigation-desktop #hiddenNav ul li a.models.active .icon {
   background-position: -104px 0px;
 }
 .navigation-desktop #hiddenNav ul li a.models .icon {
   background-size: 180px !important;
-}
-@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (-moz-min-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
-  .navigation-desktop #hiddenNav ul li a .icon {
-    background-image: url('../img/navIcons_2x.png');
-    background-size: 240px 1240px;
-  }
-  .navigation-desktop #hiddenNav ul li a.specialOffers .icon,
-  .navigation-desktop #hiddenNav ul li a.special-offers .icon {
-    background-position: 0px -444px;
-  }
-  .navigation-desktop #hiddenNav ul li a.specialOffers:hover .icon,
-  .navigation-desktop #hiddenNav ul li a.special-offers:hover .icon {
-    background-position: -80px -444px;
-  }
-  .navigation-desktop #hiddenNav ul li a.specialOffers:active .icon,
-  .navigation-desktop #hiddenNav ul li a.special-offers:active .icon,
-  .navigation-desktop #hiddenNav ul li a.specialOffers.active .icon,
-  .navigation-desktop #hiddenNav ul li a.special-offers.active .icon {
-    background-position: -160px -444px;
-  }
-  .navigation-desktop #hiddenNav ul li a.financialServices .icon,
-  .navigation-desktop #hiddenNav ul li a.financial-services .icon {
-    background-position: 0px -520px;
-  }
-  .navigation-desktop #hiddenNav ul li a.financialServices:hover .icon,
-  .navigation-desktop #hiddenNav ul li a.financial-services:hover .icon {
-    background-position: -80px -520px;
-  }
-  .navigation-desktop #hiddenNav ul li a.financialServices:active .icon,
-  .navigation-desktop #hiddenNav ul li a.financial-services:active .icon,
-  .navigation-desktop #hiddenNav ul li a.financialServices.active .icon,
-  .navigation-desktop #hiddenNav ul li a.financial-services.active .icon {
-    background-position: -160px -520px;
-  }
-  .navigation-desktop #hiddenNav ul li a.me .icon {
-    background-position: 0px -156px;
-  }
-  .navigation-desktop #hiddenNav ul li a.me:hover .icon {
-    background-position: -80px -156px;
-  }
-  .navigation-desktop #hiddenNav ul li a.me:active .icon,
-  .navigation-desktop #hiddenNav ul li a.me.active .icon {
-    background-position: -160px -156px;
-  }
-  .navigation-desktop #hiddenNav ul li a.certified-pre-owned .icon {
-    background-position: 0px -1048px;
-  }
-  .navigation-desktop #hiddenNav ul li a.certified-pre-owned:hover .icon {
-    background-position: -80px -1048px;
-  }
-  .navigation-desktop #hiddenNav ul li a.certified-pre-owned:active .icon,
-  .navigation-desktop #hiddenNav ul li a.certified-pre-owned.active .icon {
-    background-position: -160px -1048px;
-  }
-  .navigation-desktop #hiddenNav ul li a.socialNews .icon,
-  .navigation-desktop #hiddenNav ul li a.social-news .icon {
-    background-position: 0px -663px;
-  }
-  .navigation-desktop #hiddenNav ul li a.socialNews:hover .icon,
-  .navigation-desktop #hiddenNav ul li a.social-news:hover .icon {
-    background-position: -80px -663px;
-  }
-  .navigation-desktop #hiddenNav ul li a.socialNews:active .icon,
-  .navigation-desktop #hiddenNav ul li a.social-news:active .icon,
-  .navigation-desktop #hiddenNav ul li a.socialNews.active .icon,
-  .navigation-desktop #hiddenNav ul li a.social-news.active .icon {
-    background-position: -160px -663px;
-  }
-  .navigation-desktop #hiddenNav ul li a.corporate .icon {
-    background-position: 0px -737px;
-  }
-  .navigation-desktop #hiddenNav ul li a.corporate:hover .icon {
-    background-position: -80px -737px;
-  }
-  .navigation-desktop #hiddenNav ul li a.corporate:active .icon,
-  .navigation-desktop #hiddenNav ul li a.corporate.active .icon {
-    background-position: -160px -737px;
-  }
-  .navigation-desktop #hiddenNav ul li a.newsroom .icon {
-    background-position: 0px -878px;
-  }
-  .navigation-desktop #hiddenNav ul li a.newsroom:hover .icon {
-    background-position: -80px -878px;
-  }
-  .navigation-desktop #hiddenNav ul li a.newsroom:active .icon,
-  .navigation-desktop #hiddenNav ul li a.newsroom.active .icon {
-    background-position: -160px -878px;
-  }
-  .navigation-desktop #hiddenNav ul li a.contact .icon {
-    background-position: 0px -810px;
-  }
-  .navigation-desktop #hiddenNav ul li a.contact:hover .icon {
-    background-position: -80px -810px;
-  }
-  .navigation-desktop #hiddenNav ul li a.contact:active .icon,
-  .navigation-desktop #hiddenNav ul li a.contact.active .icon {
-    background-position: -160px -810px;
-  }
-  .navigation-desktop #hiddenNav ul li a.owners .icon {
-    background-position: 0px -590px;
-  }
-  .navigation-desktop #hiddenNav ul li a.owners:hover .icon {
-    background-position: -80px -590px;
-  }
-  .navigation-desktop #hiddenNav ul li a.owners:active .icon,
-  .navigation-desktop #hiddenNav ul li a.owners.active .icon {
-    background-position: -160px -590px;
-  }
-  .navigation-desktop #hiddenNav ul li a.findADealer .icon,
-  .navigation-desktop #hiddenNav ul li a.find-a-dealer .icon {
-    background-position: 0px -973px;
-  }
-  .navigation-desktop #hiddenNav ul li a.findADealer:hover .icon,
-  .navigation-desktop #hiddenNav ul li a.find-a-dealer:hover .icon {
-    background-position: -80px -973px;
-  }
-  .navigation-desktop #hiddenNav ul li a.findADealer:active .icon,
-  .navigation-desktop #hiddenNav ul li a.find-a-dealer:active .icon,
-  .navigation-desktop #hiddenNav ul li a.findADealer.active .icon,
-  .navigation-desktop #hiddenNav ul li a.find-a-dealer.active .icon {
-    background-position: -160px -973px;
-  }
-  .navigation-desktop #hiddenNav ul li a.build-your-own .icon {
-    background-position: 0px -366px;
-  }
-  .navigation-desktop #hiddenNav ul li a.build-your-own:hover .icon {
-    background-position: -80px -366px;
-  }
-  .navigation-desktop #hiddenNav ul li a.build-your-own:active .icon,
-  .navigation-desktop #hiddenNav ul li a.build-your-own.active .icon {
-    background-position: -162px -366px;
-  }
-  .navigation-desktop #hiddenNav ul li a.find-a-match .icon {
-    background-position: 4px -77px;
-  }
-  .navigation-desktop #hiddenNav ul li a.find-a-match:hover .icon {
-    background-position: -69px -77px;
-  }
-  .navigation-desktop #hiddenNav ul li a.find-a-match:active .icon,
-  .navigation-desktop #hiddenNav ul li a.find-a-match.active .icon {
-    background-position: -138px -77px;
-  }
-  .navigation-desktop #hiddenNav ul li a.find-a-match .icon {
-    background-size: 220px !important;
-  }
-  .navigation-desktop #hiddenNav ul li a.models .icon {
-    background-position: 8px 0px;
-  }
-  .navigation-desktop #hiddenNav ul li a.models:hover .icon {
-    background-position: -52px 0px;
-  }
-  .navigation-desktop #hiddenNav ul li a.models:active .icon,
-  .navigation-desktop #hiddenNav ul li a.models.active .icon {
-    background-position: -104px 0px;
-  }
-  .navigation-desktop #hiddenNav ul li a.models .icon {
-    background-size: 180px !important;
-  }
-
 }
 .navigation-desktop #hiddenNav ul li a .text br {
   display: none;
@@ -482,28 +274,17 @@
   overflow: hidden !important;
 }
 .navigation-desktop #visibleNav #logo {
-  background: url('../img/vwLogo_1x.png') center center no-repeat;
+  background: url("../img/vwLogo_1x.png") center center no-repeat;
   height: 67px;
   padding: 15px 0 30px;
   border-bottom: 1px solid #f1f5f6;
   text-indent: -9999px;
   display: block;
 }
-@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (-moz-min-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
-  .navigation-desktop #visibleNav #logo {
-    background-image: url('../img/vwLogo_2x.png');
-    /* we don't have the vwLogoNew_2x file */
-
-    background-size: 71px 90px;
-  }
-
-}
 .navigation-desktop #visibleNav ul {
   list-style: none;
   margin: 0;
   padding: 0;
-  /* li */
-
 }
 .navigation-desktop #visibleNav ul.location {
   position: absolute;
@@ -525,190 +306,258 @@
   font-weight: 200;
   font-family: "Black", sans-serif;
   font-weight: normal;
-  background-image: url('../img/navIcons_1x.png');
+  background-image: url("../img/navIcons_1x.png");
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   color: #808588;
   background-color: transparent;
-  /*
-          .backgroundPositionStates(@defaultX, @defaultY, @hoverX, @hoverY, @activeX, @activeY) {
-            background-position: @defaultX @defaultY;
-            &:hover { background-position: @hoverX @hoverY; }
-            &:active, &.active { background-position: @activeX @activeY; }
-          }*/
-
 }
 .navigation-desktop #visibleNav ul li a:hover {
   color: #333333;
 }
-.navigation-desktop #visibleNav ul li a:active,
-.navigation-desktop #visibleNav ul li a.active {
+.navigation-desktop #visibleNav ul li a:active, .navigation-desktop #visibleNav ul li a.active {
   color: #01b1ec;
 }
 .navigation-desktop #visibleNav ul li a:hover {
   background-color: #f8faf9;
 }
-.navigation-desktop #visibleNav ul li a:active,
-.navigation-desktop #visibleNav ul li a.active {
+.navigation-desktop #visibleNav ul li a:active, .navigation-desktop #visibleNav ul li a.active {
   background-color: transparent;
 }
 .navigation-desktop #visibleNav ul li a.models {
   background-position: 8px -5px;
 }
-.navigation-desktop #visibleNav ul li a.models:hover {
-  background-position: -72px -5px;
-}
-.navigation-desktop #visibleNav ul li a.models:active,
-.navigation-desktop #visibleNav ul li a.models.active {
+.navigation-desktop #visibleNav ul li a.models:hover, .navigation-desktop #visibleNav ul li a.models:active, .navigation-desktop #visibleNav ul li a.models.active {
   background-position: -72px -5px;
 }
 .navigation-desktop #visibleNav ul li a.find-a-match {
   background-position: 8px -90px;
 }
-.navigation-desktop #visibleNav ul li a.find-a-match:hover {
-  background-position: -72px -90px;
-}
-.navigation-desktop #visibleNav ul li a.find-a-match:active,
-.navigation-desktop #visibleNav ul li a.find-a-match.active {
+.navigation-desktop #visibleNav ul li a.find-a-match:hover, .navigation-desktop #visibleNav ul li a.find-a-match:active, .navigation-desktop #visibleNav ul li a.find-a-match.active {
   background-position: -72px -90px;
 }
 .navigation-desktop #visibleNav ul li a.find-a-dealer {
   background-position: 8px -1070px;
 }
-.navigation-desktop #visibleNav ul li a.find-a-dealer:hover {
-  background-position: -72px -1070px;
-}
-.navigation-desktop #visibleNav ul li a.find-a-dealer:active,
-.navigation-desktop #visibleNav ul li a.find-a-dealer.active {
+.navigation-desktop #visibleNav ul li a.find-a-dealer:hover, .navigation-desktop #visibleNav ul li a.find-a-dealer:active, .navigation-desktop #visibleNav ul li a.find-a-dealer.active {
   background-position: -72px -1070px;
 }
 .navigation-desktop #visibleNav ul li a.me {
   background-position: 8px -170px;
 }
-.navigation-desktop #visibleNav ul li a.me:hover {
-  background-position: -72px -170px;
-}
-.navigation-desktop #visibleNav ul li a.me:active,
-.navigation-desktop #visibleNav ul li a.me.active {
+.navigation-desktop #visibleNav ul li a.me:hover, .navigation-desktop #visibleNav ul li a.me:active, .navigation-desktop #visibleNav ul li a.me.active {
   background-position: -72px -170px;
 }
 .navigation-desktop #visibleNav ul li a.location {
   background-position: 8px -974px;
 }
-.navigation-desktop #visibleNav ul li a.location:hover {
-  background-position: -72px -974px;
-}
-.navigation-desktop #visibleNav ul li a.location:active,
-.navigation-desktop #visibleNav ul li a.location.active {
+.navigation-desktop #visibleNav ul li a.location:hover, .navigation-desktop #visibleNav ul li a.location:active, .navigation-desktop #visibleNav ul li a.location.active {
   background-position: -72px -974px;
 }
 .navigation-desktop #visibleNav ul li a.navSwitch {
   background-position: 8px -245px;
 }
-.navigation-desktop #visibleNav ul li a.navSwitch:hover {
-  background-position: -72px -245px;
-}
-.navigation-desktop #visibleNav ul li a.navSwitch:active,
-.navigation-desktop #visibleNav ul li a.navSwitch.active {
+.navigation-desktop #visibleNav ul li a.navSwitch:hover, .navigation-desktop #visibleNav ul li a.navSwitch:active, .navigation-desktop #visibleNav ul li a.navSwitch.active {
   background-position: -72px -245px;
 }
 .navigation-desktop #visibleNav ul li a.build-your-own {
   background-position: 8px -405px;
 }
-.navigation-desktop #visibleNav ul li a.build-your-own:hover {
-  background-position: -72px -405px;
-}
-.navigation-desktop #visibleNav ul li a.build-your-own:active,
-.navigation-desktop #visibleNav ul li a.build-your-own.active {
+.navigation-desktop #visibleNav ul li a.build-your-own:hover, .navigation-desktop #visibleNav ul li a.build-your-own:active, .navigation-desktop #visibleNav ul li a.build-your-own.active {
   background-position: -72px -405px;
 }
 .navigation-desktop #visibleNav ul li a.owners {
   background-position: 8px -647px;
 }
-.navigation-desktop #visibleNav ul li a.owners:hover {
-  background-position: -78px -647px;
-}
-.navigation-desktop #visibleNav ul li a.owners:active,
-.navigation-desktop #visibleNav ul li a.owners.active {
+.navigation-desktop #visibleNav ul li a.owners:hover, .navigation-desktop #visibleNav ul li a.owners:active, .navigation-desktop #visibleNav ul li a.owners.active {
   background-position: -78px -647px;
 }
 .navigation-desktop #visibleNav ul li a .text {
   margin-top: 10px;
 }
-@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (-moz-min-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (-moz-min-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  .navigation-desktop #hiddenNav ul li a .icon {
+    background-image: url("../img/navIcons_2x.png");
+    background-size: 240px 1240px;
+  }
+  .navigation-desktop #hiddenNav ul li a.specialOffers .icon, .navigation-desktop #hiddenNav ul li a.special-offers .icon {
+    background-position: 0px -444px;
+  }
+  .navigation-desktop #hiddenNav ul li a.specialOffers:hover .icon, .navigation-desktop #hiddenNav ul li a.special-offers:hover .icon {
+    background-position: -80px -444px;
+  }
+  .navigation-desktop #hiddenNav ul li a.specialOffers:active .icon, .navigation-desktop #hiddenNav ul li a.special-offers:active .icon, .navigation-desktop #hiddenNav ul li a.specialOffers.active .icon, .navigation-desktop #hiddenNav ul li a.special-offers.active .icon {
+    background-position: -160px -444px;
+  }
+  .navigation-desktop #hiddenNav ul li a.financialServices .icon, .navigation-desktop #hiddenNav ul li a.financial-services .icon {
+    background-position: 0px -520px;
+  }
+  .navigation-desktop #hiddenNav ul li a.financialServices:hover .icon, .navigation-desktop #hiddenNav ul li a.financial-services:hover .icon {
+    background-position: -80px -520px;
+  }
+  .navigation-desktop #hiddenNav ul li a.financialServices:active .icon, .navigation-desktop #hiddenNav ul li a.financial-services:active .icon, .navigation-desktop #hiddenNav ul li a.financialServices.active .icon, .navigation-desktop #hiddenNav ul li a.financial-services.active .icon {
+    background-position: -160px -520px;
+  }
+  .navigation-desktop #hiddenNav ul li a.me .icon {
+    background-position: 0px -156px;
+  }
+  .navigation-desktop #hiddenNav ul li a.me:hover .icon {
+    background-position: -80px -156px;
+  }
+  .navigation-desktop #hiddenNav ul li a.me:active .icon, .navigation-desktop #hiddenNav ul li a.me.active .icon {
+    background-position: -160px -156px;
+  }
+  .navigation-desktop #hiddenNav ul li a.certified-pre-owned .icon {
+    background-position: 0px -1048px;
+  }
+  .navigation-desktop #hiddenNav ul li a.certified-pre-owned:hover .icon {
+    background-position: -80px -1048px;
+  }
+  .navigation-desktop #hiddenNav ul li a.certified-pre-owned:active .icon, .navigation-desktop #hiddenNav ul li a.certified-pre-owned.active .icon {
+    background-position: -160px -1048px;
+  }
+  .navigation-desktop #hiddenNav ul li a.socialNews .icon, .navigation-desktop #hiddenNav ul li a.social-news .icon {
+    background-position: 0px -663px;
+  }
+  .navigation-desktop #hiddenNav ul li a.socialNews:hover .icon, .navigation-desktop #hiddenNav ul li a.social-news:hover .icon {
+    background-position: -80px -663px;
+  }
+  .navigation-desktop #hiddenNav ul li a.socialNews:active .icon, .navigation-desktop #hiddenNav ul li a.social-news:active .icon, .navigation-desktop #hiddenNav ul li a.socialNews.active .icon, .navigation-desktop #hiddenNav ul li a.social-news.active .icon {
+    background-position: -160px -663px;
+  }
+  .navigation-desktop #hiddenNav ul li a.corporate .icon {
+    background-position: 0px -737px;
+  }
+  .navigation-desktop #hiddenNav ul li a.corporate:hover .icon {
+    background-position: -80px -737px;
+  }
+  .navigation-desktop #hiddenNav ul li a.corporate:active .icon, .navigation-desktop #hiddenNav ul li a.corporate.active .icon {
+    background-position: -160px -737px;
+  }
+  .navigation-desktop #hiddenNav ul li a.newsroom .icon {
+    background-position: 0px -878px;
+  }
+  .navigation-desktop #hiddenNav ul li a.newsroom:hover .icon {
+    background-position: -80px -878px;
+  }
+  .navigation-desktop #hiddenNav ul li a.newsroom:active .icon, .navigation-desktop #hiddenNav ul li a.newsroom.active .icon {
+    background-position: -160px -878px;
+  }
+  .navigation-desktop #hiddenNav ul li a.contact .icon {
+    background-position: 0px -810px;
+  }
+  .navigation-desktop #hiddenNav ul li a.contact:hover .icon {
+    background-position: -80px -810px;
+  }
+  .navigation-desktop #hiddenNav ul li a.contact:active .icon, .navigation-desktop #hiddenNav ul li a.contact.active .icon {
+    background-position: -160px -810px;
+  }
+  .navigation-desktop #hiddenNav ul li a.owners .icon {
+    background-position: 0px -590px;
+  }
+  .navigation-desktop #hiddenNav ul li a.owners:hover .icon {
+    background-position: -80px -590px;
+  }
+  .navigation-desktop #hiddenNav ul li a.owners:active .icon, .navigation-desktop #hiddenNav ul li a.owners.active .icon {
+    background-position: -160px -590px;
+  }
+  .navigation-desktop #hiddenNav ul li a.findADealer .icon, .navigation-desktop #hiddenNav ul li a.find-a-dealer .icon {
+    background-position: 0px -973px;
+  }
+  .navigation-desktop #hiddenNav ul li a.findADealer:hover .icon, .navigation-desktop #hiddenNav ul li a.find-a-dealer:hover .icon {
+    background-position: -80px -973px;
+  }
+  .navigation-desktop #hiddenNav ul li a.findADealer:active .icon, .navigation-desktop #hiddenNav ul li a.find-a-dealer:active .icon, .navigation-desktop #hiddenNav ul li a.findADealer.active .icon, .navigation-desktop #hiddenNav ul li a.find-a-dealer.active .icon {
+    background-position: -160px -973px;
+  }
+  .navigation-desktop #hiddenNav ul li a.build-your-own .icon {
+    background-position: 0px -366px;
+  }
+  .navigation-desktop #hiddenNav ul li a.build-your-own:hover .icon {
+    background-position: -80px -366px;
+  }
+  .navigation-desktop #hiddenNav ul li a.build-your-own:active .icon, .navigation-desktop #hiddenNav ul li a.build-your-own.active .icon {
+    background-position: -162px -366px;
+  }
+  .navigation-desktop #hiddenNav ul li a.find-a-match .icon {
+    background-position: 4px -77px;
+  }
+  .navigation-desktop #hiddenNav ul li a.find-a-match:hover .icon {
+    background-position: -69px -77px;
+  }
+  .navigation-desktop #hiddenNav ul li a.find-a-match:active .icon, .navigation-desktop #hiddenNav ul li a.find-a-match.active .icon {
+    background-position: -138px -77px;
+  }
+  .navigation-desktop #hiddenNav ul li a.find-a-match .icon {
+    background-size: 220px !important;
+  }
+  .navigation-desktop #hiddenNav ul li a.models .icon {
+    background-position: 8px 0px;
+  }
+  .navigation-desktop #hiddenNav ul li a.models:hover .icon {
+    background-position: -52px 0px;
+  }
+  .navigation-desktop #hiddenNav ul li a.models:active .icon, .navigation-desktop #hiddenNav ul li a.models.active .icon {
+    background-position: -104px 0px;
+  }
+  .navigation-desktop #hiddenNav ul li a.models .icon {
+    background-size: 180px !important;
+  }
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (-moz-min-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  .navigation-desktop #visibleNav #logo {
+    background-image: url("../img/vwLogo_2x.png");
+    /* we don't have the vwLogoNew_2x file */
+    background-size: 71px 90px;
+  }
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (-moz-min-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
   .navigation-desktop #visibleNav ul li a {
-    background-image: url('../img/navIcons_2x.png');
+    background-image: url("../img/navIcons_2x.png");
     background-size: 240px;
   }
   .navigation-desktop #visibleNav ul li a.models {
     background-position: 8px -5px;
   }
-  .navigation-desktop #visibleNav ul li a.models:hover {
-    background-position: -72px -5px;
-  }
-  .navigation-desktop #visibleNav ul li a.models:active,
-  .navigation-desktop #visibleNav ul li a.models.active {
+  .navigation-desktop #visibleNav ul li a.models:hover, .navigation-desktop #visibleNav ul li a.models:active, .navigation-desktop #visibleNav ul li a.models.active {
     background-position: -72px -5px;
   }
   .navigation-desktop #visibleNav ul li a.find-a-match {
     background-position: 8px -90px;
   }
-  .navigation-desktop #visibleNav ul li a.find-a-match:hover {
-    background-position: -72px -90px;
-  }
-  .navigation-desktop #visibleNav ul li a.find-a-match:active,
-  .navigation-desktop #visibleNav ul li a.find-a-match.active {
+  .navigation-desktop #visibleNav ul li a.find-a-match:hover, .navigation-desktop #visibleNav ul li a.find-a-match:active, .navigation-desktop #visibleNav ul li a.find-a-match.active {
     background-position: -72px -90px;
   }
   .navigation-desktop #visibleNav ul li a.find-a-dealer {
     background-position: 8px -1070px;
   }
-  .navigation-desktop #visibleNav ul li a.find-a-dealer:hover {
-    background-position: -72px -1070px;
-  }
-  .navigation-desktop #visibleNav ul li a.find-a-dealer:active,
-  .navigation-desktop #visibleNav ul li a.find-a-dealer.active {
+  .navigation-desktop #visibleNav ul li a.find-a-dealer:hover, .navigation-desktop #visibleNav ul li a.find-a-dealer:active, .navigation-desktop #visibleNav ul li a.find-a-dealer.active {
     background-position: -72px -1070px;
   }
   .navigation-desktop #visibleNav ul li a.me {
     background-position: 8px -170px;
   }
-  .navigation-desktop #visibleNav ul li a.me:hover {
-    background-position: -72px -170px;
-  }
-  .navigation-desktop #visibleNav ul li a.me:active,
-  .navigation-desktop #visibleNav ul li a.me.active {
+  .navigation-desktop #visibleNav ul li a.me:hover, .navigation-desktop #visibleNav ul li a.me:active, .navigation-desktop #visibleNav ul li a.me.active {
     background-position: -72px -170px;
   }
   .navigation-desktop #visibleNav ul li a.location {
     background-position: 8px -974px;
   }
-  .navigation-desktop #visibleNav ul li a.location:hover {
-    background-position: -72px -974px;
-  }
-  .navigation-desktop #visibleNav ul li a.location:active,
-  .navigation-desktop #visibleNav ul li a.location.active {
+  .navigation-desktop #visibleNav ul li a.location:hover, .navigation-desktop #visibleNav ul li a.location:active, .navigation-desktop #visibleNav ul li a.location.active {
     background-position: -72px -974px;
   }
   .navigation-desktop #visibleNav ul li a.navSwitch {
     background-position: 8px -245px;
   }
-  .navigation-desktop #visibleNav ul li a.navSwitch:hover {
-    background-position: -72px -245px;
-  }
-  .navigation-desktop #visibleNav ul li a.navSwitch:active,
-  .navigation-desktop #visibleNav ul li a.navSwitch.active {
+  .navigation-desktop #visibleNav ul li a.navSwitch:hover, .navigation-desktop #visibleNav ul li a.navSwitch:active, .navigation-desktop #visibleNav ul li a.navSwitch.active {
     background-position: -72px -245px;
   }
   .navigation-desktop #visibleNav ul li a.build-your-own {
     background-position: 8px -405px;
   }
-  .navigation-desktop #visibleNav ul li a.build-your-own:hover {
-    background-position: -72px -405px;
-  }
-  .navigation-desktop #visibleNav ul li a.build-your-own:active,
-  .navigation-desktop #visibleNav ul li a.build-your-own.active {
+  .navigation-desktop #visibleNav ul li a.build-your-own:hover, .navigation-desktop #visibleNav ul li a.build-your-own:active, .navigation-desktop #visibleNav ul li a.build-your-own.active {
     background-position: -72px -405px;
   }
   .navigation-desktop #visibleNav ul li a.owners {
@@ -717,14 +566,12 @@
   .navigation-desktop #visibleNav ul li a.owners:hover {
     background-position: -71px -1286px;
   }
-  .navigation-desktop #visibleNav ul li a.owners:active,
-  .navigation-desktop #visibleNav ul li a.owners.active {
+  .navigation-desktop #visibleNav ul li a.owners:active, .navigation-desktop #visibleNav ul li a.owners.active {
     background-position: -78px -1286px;
   }
-
 }
 .navigation-mobile .navigation-mobile-top-nav {
-  *zoom: 1;
+  zoom: 1;
   background-color: white;
   height: 60px;
   position: relative;
@@ -732,18 +579,22 @@
   width: 100%;
   z-index: 100;
 }
-.navigation-mobile .navigation-mobile-top-nav:before,
-.navigation-mobile .navigation-mobile-top-nav:after {
+.navigation-mobile .navigation-mobile-top-nav:before {
   display: table;
   content: "";
   line-height: 0;
 }
 .navigation-mobile .navigation-mobile-top-nav:after {
+  display: table;
+  content: "";
+  line-height: 0;
   clear: both;
 }
+
 .siteNavHideMobile .navigation-mobile .navigation-mobile-top-nav {
   transform: translatey(-100%);
 }
+
 .navigation-mobile .navigation-mobile-top-nav a {
   color: #88979e;
   display: inline-block;
@@ -756,7 +607,7 @@
   width: 33px;
   height: 33px;
   margin-top: 13.5px;
-  background: url('../img/vw-logo-only.png') no-repeat;
+  background: url("../img/vw-logo-only.png") no-repeat;
   background-size: contain;
 }
 .navigation-mobile .navigation-mobile-top-nav a i {
@@ -857,7 +708,7 @@
 .navigation-mobile .navigation-mobile-menu-nav .scrollable ul.main li.mobile-menu-main-home i {
   display: inline-block;
   height: 44px;
-  background: url('../img/vw-logo-with-title.png') no-repeat;
+  background: url("../img/vw-logo-with-title.png") no-repeat;
   background-size: contain;
   margin: 0 22px 0 10px;
   position: relative;
@@ -867,12 +718,12 @@
 .navigation-mobile .navigation-mobile-menu-nav .scrollable ul.main li.mobile-menu-main-models i.vw-icon:before {
   content: '\e809';
 }
-.navigation-mobile .navigation-mobile-menu-nav .scrollable ul.main li.mobile-menu-main-find-match i.vw-icon:before {
-  content: '\e819';
-}
 .navigation-mobile .navigation-mobile-menu-nav .scrollable ul.main li.mobile-menu-main-find-match i.vw-icon {
   font-size: 32px;
   margin-right: 29px;
+}
+.navigation-mobile .navigation-mobile-menu-nav .scrollable ul.main li.mobile-menu-main-find-match i.vw-icon:before {
+  content: '\e819';
 }
 .navigation-mobile .navigation-mobile-menu-nav .scrollable ul.main li.mobile-menu-main-find-a-dealer i.vw-icon:before {
   content: '\e81d';
@@ -984,10 +835,8 @@
   display: flex;
   display: -ms-flexbox;
   /* IE10+ */
-
   display: -webkit-flex;
   /* Safari */
-
   flex-direction: row;
   justify-content: space-between;
 }
@@ -1039,7 +888,7 @@
   width: 100vw;
   height: 100vh;
   z-index: 110;
-  background-color: rgba(0, 0, 0, 0.75);
+  background-color: rgba(0, 0, 0, 0.9);
   -webkit-transition: all 500ms ease;
   -moz-transition: all 500ms ease;
   -o-transition: all 500ms ease;
@@ -1080,6 +929,7 @@
   background: url(../img/closeButtonWhite_2x.png) no-repeat;
   background-size: 55px;
 }
+
 .navigation {
   position: relative;
   z-index: 120;
@@ -1090,6 +940,7 @@
 .navigation .navigation-mobile {
   display: block;
 }
+
 @media (min-width: 768px) {
   .navigation .navigation-desktop {
     display: block;
@@ -1098,7 +949,6 @@
     display: none;
   }
 }
-
 .navigation-mobile li a .icon {
   height: 55px;
   width: 55px;
@@ -1109,66 +959,43 @@
   background: url(../img/navIcons_mobile_2x.png) no-repeat;
   background-size: 820px;
   top: -13px;
-  left: -9px
+  left: -9px;
 }
-
 .navigation-mobile li a.home .icon {
-  background-position: -5px -6px!important
+  background-position: -5px -6px !important;
 }
-
 .navigation-mobile li a.models .icon {
-  background-position: -3px -65px!important
+  background-position: -3px -65px !important;
 }
-
 .navigation-mobile li a.find-a-match .icon {
-  background-position: -3px -123px!important
+  background-position: -3px -123px !important;
 }
-
 .navigation-mobile li a.find-a-dealer .icon {
-  background-position: -3px -182px!important
+  background-position: -3px -182px !important;
 }
-
 .navigation-mobile li a.build-your-own .icon {
-  background: url(../img/navIcons_mobile_builder.png) no-repeat!important;
-  background-position: center 8px!important;
-  background-size: 60%!important
+  background: url(../img/navIcons_mobile_builder.png) no-repeat !important;
+  background-position: center 8px !important;
+  background-size: 60% !important;
 }
-
 .navigation-mobile li a.owners .icon {
-  background-position: -3px -417px!important
+  background-position: -3px -417px !important;
 }
-
 .navigation-mobile li a.special-offers .icon {
-  background-position: -3px -299px!important
+  background-position: -3px -299px !important;
 }
-
 .navigation-mobile li a .text {
   font-size: 18px;
   font-family: VWHeadWeb-Bold;
-  letter-spacing: .5px
+  letter-spacing: 0.5px;
 }
-
-@media (max-width: 320px) {
-  .navigation-mobile li a .text {
-    font-size:14px
-  }
-}
-
-@media (max-width: 375px) {
-  .navigation-mobile li a .text {
-    font-size:15px
-  }
-}
-
 .navigation-mobile .sub {
   padding: 20px 0;
-  background-color: #f1f5f6
+  background-color: #f1f5f6;
 }
-
 .navigation-mobile .sub li {
-  display: block
+  display: block;
 }
-
 .navigation-mobile .sub li a .icon {
   position: relative;
   width: 54px;
@@ -1177,37 +1004,41 @@
   bottom: 12px;
   left: 0;
   background: url(../img/navIcons_mobile_2x.png) no-repeat -104px -157px;
-  background-size: 800px
+  background-size: 800px;
 }
-
 .navigation-mobile .sub li a.contact .icon {
-  background-position: -109px -60.5px!important;
+  background-position: -109px -60.5px !important;
   width: 55px;
-  height: 55px
+  height: 55px;
 }
-
 .navigation-mobile .sub li a.me .icon {
-  background-position: -109px -346.5px!important
+  background-position: -109px -346.5px !important;
 }
-
 .navigation-mobile .sub li a.newsroom .icon {
-  background-position: -109px -402px!important
+  background-position: -109px -402px !important;
 }
-
 .navigation-mobile .sub li a.corporate .icon {
-  background-position: -109px -175.5px!important
+  background-position: -109px -175.5px !important;
 }
-
 .navigation-mobile .sub li a.financial-services .icon {
-  background-position: -109px -288px!important
+  background-position: -109px -288px !important;
 }
-
 .navigation-mobile .sub li a .text {
   font-size: 12px;
   font-family: VWHeadWeb-Bold;
-  letter-spacing: .5px
+  letter-spacing: 0.5px;
 }
 
+@media (max-width: 320px) {
+  .navigation-mobile li a .text {
+    font-size: 14px;
+  }
+}
+@media (max-width: 375px) {
+  .navigation-mobile li a .text {
+    font-size: 15px;
+  }
+}
 #superTint {
   background: transparent;
   display: block;

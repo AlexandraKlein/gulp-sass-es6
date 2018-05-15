@@ -12,7 +12,7 @@ gulp.task('build', (done) => {
 });
 
 // build SASS for distribution
-gulp.task('build_sass', ['sass_dist', 'lint_sass']);
+gulp.task('build_sass', ['sass_dist']);
 
 // build JS for distribution
 gulp.task('build_js', ['scripts_dist', 'lint_js']);
@@ -20,8 +20,8 @@ gulp.task('build_js', ['scripts_dist', 'lint_js']);
 // build HTML for distribution
 gulp.task('build_html', () => {
     gulp.src(global.paths.html)
-        .pipe(replace('css/style.css', 'style.min.css'))
-        .pipe(replace('js/script.js', 'script.min.js'))
+        .pipe(replace('css/style.css', 'css/style.min.css'))
+        .pipe(replace('js/script.js', 'js/script.min.js'))
         .pipe(htmlMin({ collapseWhitespace: true }))
         .pipe(gulp.dest(global.paths.dist));
 });
