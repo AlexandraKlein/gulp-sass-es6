@@ -770,488 +770,19 @@
   font-size: 9px;
   text-transform: uppercase;
   position: absolute;
-  bottom: 12px;
+  bottom: 0;
   left: 50%;
   transform: translatex(-50%);
 }
 .navigation-mobile .navigation-mobile-top-nav a.open-menu-nav {
   float: left;
-}
-.navigation-mobile .navigation-mobile-top-nav a.open-menu-nav i {
-  font-size: 18px;
-  bottom: 28px;
-  left: 27px;
-}
-.navigation-mobile .navigation-mobile-top-nav a.open-dealer-nav {
-  float: right;
-}
-.navigation-mobile .navigation-mobile-top-nav a.open-dealer-nav i {
-  font-size: 30px;
-  line-height: 38px;
-}
-.navigation-mobile .navigation-mobile-menu-nav {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: calc(100% - 64px);
-  height: 100%;
-  z-index: 120;
-  background-color: white;
-  -webkit-transition: all 500ms ease;
-  -moz-transition: all 500ms ease;
-  -o-transition: all 500ms ease;
-  transition: all 500ms ease;
-  transform: translatex(-100%);
-}
-.navigation-mobile .navigation-mobile-menu-nav.visible {
-  transform: translatex(0);
-  background-color: #EEE;
-}
-.navigation-mobile .navigation-mobile-menu-nav .scrollable {
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  overflow-y: auto;
-}
-.navigation-mobile .navigation-mobile-menu-nav .scrollable ul.main {
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
-}
-.navigation-mobile .navigation-mobile-menu-nav .scrollable ul.main li a {
-  display: block;
-  font-size: 17px;
-  text-transform: uppercase;
-  border-bottom: 1px solid #EEE;
-  background-color: #fff;
-  padding: 18px 14px;
-  text-decoration: none;
-  font-family: "Black", sans-serif;
-  font-weight: normal;
-  color: #808588;
-}
-.navigation-mobile .navigation-mobile-menu-nav .scrollable ul.main li a i {
-  width: 44px;
-  line-height: 44px;
-  font-size: 48px;
-  margin-right: 7px;
-}
-.navigation-mobile .navigation-mobile-menu-nav .scrollable ul.main li a span {
   position: relative;
-  top: -10px;
-}
-.navigation-mobile .navigation-mobile-menu-nav .scrollable ul.main li.mobile-menu-main-home i {
-  display: inline-block;
-  height: 44px;
-  background: url('../img/vw-logo-with-title.png') no-repeat;
-  background-size: contain;
-  margin: 0 22px 0 10px;
-  position: relative;
-  top: 6px;
-  left: 6px;
-}
-.navigation-mobile .navigation-mobile-menu-nav .scrollable ul.main li.mobile-menu-main-models i.vw-icon:before {
-  content: '\e809';
-}
-.navigation-mobile .navigation-mobile-menu-nav .scrollable ul.main li.mobile-menu-main-find-match i.vw-icon:before {
-  content: '\e819';
-}
-.navigation-mobile .navigation-mobile-menu-nav .scrollable ul.main li.mobile-menu-main-find-match i.vw-icon {
-  font-size: 32px;
-  margin-right: 29px;
-}
-.navigation-mobile .navigation-mobile-menu-nav .scrollable ul.main li.mobile-menu-main-find-a-dealer i.vw-icon:before {
-  content: '\e81d';
-}
-.navigation-mobile .navigation-mobile-menu-nav .scrollable ul.main li.mobile-menu-main-builder i.vw-icon:before {
-  content: '\e80f';
-}
-.navigation-mobile .navigation-mobile-menu-nav .scrollable ul.main li.mobile-menu-main-owners i.vw-icon:before {
-  content: '\e811';
-}
-.navigation-mobile .navigation-mobile-menu-nav .scrollable ul.main li.mobile-menu-main-special-offers i.vw-icon:before {
-  content: '\e822';
-}
-.navigation-mobile .navigation-mobile-menu-nav .scrollable ul.main li.mobile-menu-main-builder i {
-  font-size: 34px;
-  line-height: 48px;
-  margin: 0 16px 0 10px;
-}
-.navigation-mobile .navigation-mobile-menu-nav .scrollable ul.main li.mobile-menu-main-builder span {
-  top: -3px;
-}
-.navigation-mobile .navigation-mobile-menu-nav .scrollable ul.main li.mobile-menu-main-special-offers i {
-  font-size: 29px;
-  line-height: 48px;
-  margin: 0 22px 0 10px;
-}
-.navigation-mobile .navigation-mobile-menu-nav .scrollable ul.main li.mobile-menu-main-special-offers span {
-  top: -3px;
-}
-.navigation-mobile .navigation-mobile-menu-nav .scrollable ul.sub {
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
-  background-color: #EEE;
-  padding: 20px 20px 100px 20px;
-}
-.navigation-mobile .navigation-mobile-menu-nav .scrollable ul.sub li a {
-  display: block;
-  font-size: 13px;
-  font-family: "Black", sans-serif;
-  font-weight: normal;
-  text-decoration: none;
-  text-transform: uppercase;
-  color: #808588;
-  padding: 10px 0;
-}
-.navigation-mobile .navigation-mobile-menu-nav .scrollable ul.sub li a i {
-  width: 36px;
-  height: 36px;
-  font-size: 32px;
-  line-height: 20px;
-  margin-left: 5px;
-}
-.navigation-mobile .navigation-mobile-menu-nav .scrollable ul.sub li a span {
-  position: relative;
-  top: -5px;
-}
-.navigation-mobile .navigation-mobile-menu-nav .scrollable ul.sub li.mobile-menu-sub-contact i.vw-icon:before {
-  content: '\e81c';
-}
-.navigation-mobile .navigation-mobile-menu-nav .scrollable ul.sub li.mobile-menu-sub-newsroom i {
-  font-size: 24px;
-  margin: 0 9px 0 8px;
-}
-.navigation-mobile .navigation-mobile-menu-nav .scrollable ul.sub li.mobile-menu-sub-newsroom i.vw-icon:before {
-  content: '\e81b';
-}
-.navigation-mobile .navigation-mobile-menu-nav .scrollable ul.sub li.mobile-menu-sub-me i {
-  font-size: 24px;
-  margin: 0 6px 0 12px;
-}
-.navigation-mobile .navigation-mobile-menu-nav .scrollable ul.sub li.mobile-menu-sub-me i.vw-icon:before {
-  content: '\e818';
-}
-.navigation-mobile .navigation-mobile-menu-nav .scrollable ul.sub li.mobile-menu-sub-financial-services i {
-  font-size: 24px;
-  margin: 0 9px 0 8px;
-}
-.navigation-mobile .navigation-mobile-menu-nav .scrollable ul.sub li.mobile-menu-sub-financial-services i.vw-icon:before {
-  content: '\e80c';
-}
-.navigation-mobile .navigation-mobile-menu-nav .scrollable ul.sub li.mobile-menu-sub-corporate i {
-  font-size: 24px;
-  margin: 0 9px 0 8px;
-}
-.navigation-mobile .navigation-mobile-menu-nav .scrollable ul.sub li.mobile-menu-sub-corporate i.vw-icon:before {
-  content: '\e81b';
-}
-.navigation-mobile .navigation-mobile-menu-nav .scrollable .siteLanguage {
-  position: relative;
-  padding: 0 40px;
-  bottom: 75px;
-  margin-bottom: 45px;
-}
-.navigation-mobile .navigation-mobile-menu-nav .scrollable .siteLanguage a {
-  color: #808588;
-  font-size: 12px;
-  text-transform: uppercase;
-  text-decoration: none;
-}
-.navigation-mobile .navigation-mobile-menu-nav ul.bottom {
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  display: flex;
-  display: -ms-flexbox;
-  /* IE10+ */
-
-  display: -webkit-flex;
-  /* Safari */
-
-  flex-direction: row;
-  justify-content: space-between;
-}
-.navigation-mobile .navigation-mobile-menu-nav ul.bottom li {
-  display: inline-block;
-  flex-grow: 1;
-}
-.navigation-mobile .navigation-mobile-menu-nav ul.bottom li a {
-  display: block;
-  height: 74px;
-  background-color: #01b1ec;
-  border-right: 1px solid white;
-  text-align: center;
-  color: white;
-  text-decoration: none;
-  font-family: "Black", sans-serif;
-  font-weight: normal;
-}
-.navigation-mobile .navigation-mobile-menu-nav ul.bottom li a i {
-  display: block;
-  font-size: 22px;
-  width: 36px;
-  margin: 0 auto;
-  padding-top: 15px;
-}
-.navigation-mobile .navigation-mobile-menu-nav ul.bottom li a span {
-  font-size: 12px;
-  text-transform: uppercase;
-}
-.navigation-mobile .navigation-mobile-menu-nav ul.bottom li.mobile-menu-bottom-estimate i {
-  font-size: 32px;
-  line-height: 20px;
-  width: 44px;
-  padding-top: 14px;
-  margin-bottom: -4px;
-}
-.navigation-mobile .navigation-mobile-menu-nav ul.bottom li.mobile-menu-bottom-estimate span {
-  top: -3px;
-}
-.navigation-mobile .navigation-mobile-menu-nav ul.bottom li:last-child a {
-  border: none;
-}
-.navigation-mobile .navigation-mobile-dealer-nav {
-  position: fixed;
-  top: 0;
-  right: 0;
-  width: calc(100vw - (64px + 50px));
-  height: 100vh;
-  z-index: 120;
-  background-color: #f1f5f6;
-  -webkit-transition: all 500ms ease;
-  -moz-transition: all 500ms ease;
-  -o-transition: all 500ms ease;
-  transition: all 500ms ease;
-  transform: translatex(100%);
-  padding: 25px;
-}
-.navigation-mobile .navigation-mobile-dealer-nav.visible {
-  transform: translatex(0);
-}
-.navigation-mobile .navigation-mobile-dealer-nav h5 {
-  margin: 0;
-  font-size: 24px;
-  font-family: "Black", sans-serif;
-  font-weight: normal;
-}
-.navigation-mobile .navigation-mobile-dealer-nav .zip {
-  position: absolute;
-  top: 20px;
-  right: 20px;
-  font-size: 20px;
-  line-height: 42px;
-  font-family: "Black", sans-serif;
-  font-weight: normal;
-}
-.navigation-mobile .navigation-mobile-dealer-nav .zip a {
-  color: #009ddc;
-  text-decoration: none;
-}
-.navigation-mobile .navigation-mobile-dealer-nav .map {
-  height: 150px;
-  margin: 10px 0;
-  border: 5px solid white;
-  background-repeat: no-repeat !important;
-  background-size: cover !important;
-}
-.navigation-mobile .navigation-mobile-dealer-nav .dealerName {
-  font-size: 16px;
-  margin: 0 0 5px 0;
-  display: block;
-  font-weight: bold;
-  font-family: "Black";
-}
-.navigation-mobile .navigation-mobile-dealer-nav .distance {
-  margin: 0;
-}
-.navigation-mobile .navigation-mobile-dealer-nav .address {
-  line-height: 22px;
-  margin-bottom: 20px;
-}
-.navigation-mobile .navigation-mobile-dealer-nav .address a {
-  color: #009ddc;
-  text-decoration: none;
-}
-.navigation-mobile .navigation-mobile-dealer-nav .actions .buttons {
-  width: 60%;
-  float: left;
-}
-.navigation-mobile .navigation-mobile-dealer-nav .actions .buttons a {
-  display: block;
-  background-color: white;
-  text-decoration: none;
-  color: #009ddc;
-  text-transform: uppercase;
-  padding: 10px;
-  border-radius: 5px;
-  text-align: center;
-  font-size: 15px;
-  font-family: "Black", sans-serif;
-  font-weight: normal;
-  margin: 0 0 5px 0;
-}
-.navigation-mobile .navigation-mobile-dealer-nav .actions .call {
-  width: 40%;
-  float: right;
-}
-.navigation-mobile .navigation-mobile-dealer-nav .actions .call a {
-  display: block;
-  float: right;
-  width: 70px;
-  height: 70px;
-  color: white;
-  background-color: #009ddc;
-  border-radius: 70px;
-  font-size: 32px;
-  line-height: 70px;
-  text-align: center;
-}
-.navigation-mobile .navigation-mobile-dealer-nav .more-dealers {
-  position: absolute;
-  bottom: 50px;
-  right: 0;
-  width: 100%;
-  height: 50px;
-  color: white;
-  background-color: #009ddc;
-  text-align: center;
-  line-height: 50px;
-  font-size: 18px;
-  text-transform: uppercase;
-  text-decoration: none;
-  font-family: "Black", sans-serif;
-  font-weight: normal;
-}
-.navigation-mobile .navigation-mobile-tint {
-  visibility: hidden;
-  opacity: 0;
-  position: fixed;
-  left: 0;
-  top: 0;
-  width: 100vw;
-  height: 100vh;
-  z-index: 110;
-  background-color: rgba(0, 0, 0, 0.75);
-  -webkit-transition: all 500ms ease;
-  -moz-transition: all 500ms ease;
-  -o-transition: all 500ms ease;
-  transition: all 500ms ease;
-}
-.navigation-mobile .navigation-mobile-tint.visible {
-  visibility: visible;
-  opacity: 1;
-}
-.navigation-mobile .navigation-mobile-close {
-  visibility: hidden;
-  opacity: 0;
-  position: fixed;
-  top: 10px;
-  z-index: 120;
-  -webkit-transition: all 500ms ease;
-  -moz-transition: all 500ms ease;
-  -o-transition: all 500ms ease;
-  transition: all 500ms ease;
-}
-.navigation-mobile .navigation-mobile-close.visible {
-  visibility: visible;
-  opacity: 1;
-}
-.navigation-mobile .navigation-mobile-close.on-right {
-  right: 10px;
-}
-.navigation-mobile .navigation-mobile-close.on-left {
-  left: 10px;
-}
-.navigation-mobile .navigation-mobile-close i {
-  display: block;
-  width: 44px;
-  height: 44px;
-  font-size: 15px;
-  line-height: 44px;
-  text-align: center;
-  background-color: white;
-  color: #666;
-  border-radius: 44px;
-}
-.navigation {
-  position: relative;
-  z-index: 120;
-}
-.navigation .navigation-desktop {
-  display: none;
-}
-.navigation .navigation-mobile {
-  display: block;
-}
-@media (min-width: 768px) {
-  .navigation .navigation-desktop {
-    display: block;
-  }
-  .navigation .navigation-mobile {
-    display: none;
-  }
-}
-//mobile
-
-.navigation-mobile .navigation-mobile-top-nav {
-  *zoom: 1;
-  background-color: white;
-  height: 60px;
-  position: relative;
-  text-align: center;
-  width: 100%;
-  z-index: 100;
-}
-.navigation-mobile .navigation-mobile-top-nav:before,
-.navigation-mobile .navigation-mobile-top-nav:after {
-  display: table;
-  content: "";
-  line-height: 0;
-}
-.navigation-mobile .navigation-mobile-top-nav:after {
-  clear: both;
-}
-.siteNavHideMobile .navigation-mobile .navigation-mobile-top-nav {
-  transform: translatey(-100%);
-}
-.navigation-mobile .navigation-mobile-top-nav a {
-  color: #88979e;
-  display: inline-block;
-  height: 60px;
-  position: relative;
-  text-decoration: none;
   width: 60px;
-}
-.navigation-mobile .navigation-mobile-top-nav a.vw-logo {
-  width: 33px;
-  height: 33px;
-  margin-top: 13.5px;
-  background: url('../img/vw-logo-only.png') no-repeat;
-  background-size: contain;
-}
-.navigation-mobile .navigation-mobile-top-nav a i {
-  position: absolute;
-  bottom: 20px;
-  left: 50%;
-  transform: translatex(-50%);
-}
-.navigation-mobile .navigation-mobile-top-nav a span {
-  font-weight: bold;
-  font-size: 9px;
-  text-transform: uppercase;
-  position: absolute;
-  bottom: 12px;
-  left: 50%;
-  transform: translatex(-50%);
-}
-.navigation-mobile .navigation-mobile-top-nav a.open-menu-nav {
-  float: left;
+  height: 60px;
+  background: url(../img/navIcons_mobile_2x.png) no-repeat;
+  background-size: 900px;
+  margin-bottom: -2px;
+  background-position: -388px -71px;
 }
 .navigation-mobile .navigation-mobile-top-nav a.open-menu-nav i {
   font-size: 18px;
@@ -1260,6 +791,13 @@
 }
 .navigation-mobile .navigation-mobile-top-nav a.open-dealer-nav {
   float: right;
+  position: relative;
+  width: 60px;
+  height: 60px;
+  background: url(../img/navIcons_mobile_2x.png) no-repeat;
+  background-size: 900px;
+  margin-bottom: -2px;
+  background-position: -389px -135px;
 }
 .navigation-mobile .navigation-mobile-top-nav a.open-dealer-nav i {
   font-size: 30px;
@@ -1281,6 +819,7 @@
 }
 .navigation-mobile .navigation-mobile-menu-nav.visible {
   transform: translatex(0);
+  background-color: #EEE;
 }
 .navigation-mobile .navigation-mobile-menu-nav .scrollable {
   position: absolute;
@@ -1295,15 +834,16 @@
   list-style-type: none;
 }
 .navigation-mobile .navigation-mobile-menu-nav .scrollable ul.main li a {
-  display: block;
-  font-size: 17px;
-  text-transform: uppercase;
-  border-bottom: 1px solid #EEE;
-  padding: 18px 14px;
-  text-decoration: none;
-  font-family: "Black", sans-serif;
-  font-weight: normal;
   color: #808588;
+  font-family: "Black", sans-serif;
+  font-size: 15px;
+  display: block;
+  background-color: #fff;
+  padding: 34px 25px;
+  border-bottom: 1px solid #e7eaec;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 400;
 }
 .navigation-mobile .navigation-mobile-menu-nav .scrollable ul.main li a i {
   width: 44px;
@@ -1313,7 +853,6 @@
 }
 .navigation-mobile .navigation-mobile-menu-nav .scrollable ul.main li a span {
   position: relative;
-  top: -10px;
 }
 .navigation-mobile .navigation-mobile-menu-nav .scrollable ul.main li.mobile-menu-main-home i {
   display: inline-block;
@@ -1377,8 +916,9 @@
   font-weight: normal;
   text-decoration: none;
   text-transform: uppercase;
+  line-height: 30px;
+  padding: 10px 10px 16px 18px;
   color: #808588;
-  padding: 10px 0;
 }
 .navigation-mobile .navigation-mobile-menu-nav .scrollable ul.sub li a i {
   width: 36px;
@@ -1432,6 +972,7 @@
   color: #808588;
   font-size: 12px;
   text-transform: uppercase;
+  text-decoration: none;
 }
 .navigation-mobile .navigation-mobile-menu-nav ul.bottom {
   margin: 0;
@@ -1489,118 +1030,6 @@
 .navigation-mobile .navigation-mobile-menu-nav ul.bottom li:last-child a {
   border: none;
 }
-.navigation-mobile .navigation-mobile-dealer-nav {
-  position: fixed;
-  top: 0;
-  right: 0;
-  width: calc(100vw - (64px + 50px));
-  height: 100vh;
-  z-index: 120;
-  background-color: #f1f5f6;
-  -webkit-transition: all 500ms ease;
-  -moz-transition: all 500ms ease;
-  -o-transition: all 500ms ease;
-  transition: all 500ms ease;
-  transform: translatex(100%);
-  padding: 25px;
-}
-.navigation-mobile .navigation-mobile-dealer-nav.visible {
-  transform: translatex(0);
-}
-.navigation-mobile .navigation-mobile-dealer-nav h5 {
-  margin: 0;
-  font-size: 24px;
-  font-family: "Black", sans-serif;
-  font-weight: normal;
-}
-.navigation-mobile .navigation-mobile-dealer-nav .zip {
-  position: absolute;
-  top: 20px;
-  right: 20px;
-  font-size: 20px;
-  line-height: 42px;
-  font-family: "Black", sans-serif;
-  font-weight: normal;
-}
-.navigation-mobile .navigation-mobile-dealer-nav .zip a {
-  color: #009ddc;
-  text-decoration: none;
-}
-.navigation-mobile .navigation-mobile-dealer-nav .map {
-  height: 150px;
-  margin: 10px 0;
-  border: 5px solid white;
-  background-repeat: no-repeat !important;
-  background-size: cover !important;
-}
-.navigation-mobile .navigation-mobile-dealer-nav .dealerName {
-  font-size: 16px;
-  margin: 0 0 5px 0;
-  display: block;
-  font-weight: bold;
-  font-family: "Black";
-}
-.navigation-mobile .navigation-mobile-dealer-nav .distance {
-  margin: 0;
-}
-.navigation-mobile .navigation-mobile-dealer-nav .address {
-  line-height: 22px;
-  margin-bottom: 20px;
-}
-.navigation-mobile .navigation-mobile-dealer-nav .address a {
-  color: #009ddc;
-  text-decoration: none;
-}
-.navigation-mobile .navigation-mobile-dealer-nav .actions .buttons {
-  width: 60%;
-  float: left;
-}
-.navigation-mobile .navigation-mobile-dealer-nav .actions .buttons a {
-  display: block;
-  background-color: white;
-  text-decoration: none;
-  color: #009ddc;
-  text-transform: uppercase;
-  padding: 10px;
-  border-radius: 5px;
-  text-align: center;
-  font-size: 15px;
-  font-family: "Black", sans-serif;
-  font-weight: normal;
-  margin: 0 0 5px 0;
-}
-.navigation-mobile .navigation-mobile-dealer-nav .actions .call {
-  width: 40%;
-  float: right;
-}
-.navigation-mobile .navigation-mobile-dealer-nav .actions .call a {
-  display: block;
-  float: right;
-  width: 70px;
-  height: 70px;
-  color: white;
-  background-color: #009ddc;
-  border-radius: 70px;
-  font-size: 32px;
-  line-height: 70px;
-  text-align: center;
-}
-.navigation-mobile .navigation-mobile-dealer-nav .more-dealers {
-  position: absolute;
-  bottom: 50px;
-  right: 0;
-  width: 100%;
-  height: 50px;
-  color: white;
-  background-color: #009ddc;
-  text-align: center;
-  line-height: 50px;
-  font-size: 18px;
-  text-transform: uppercase;
-  text-decoration: none;
-  font-family: "Black", sans-serif;
-  font-weight: normal;
-}
 .navigation-mobile .navigation-mobile-tint {
   visibility: hidden;
   opacity: 0;
@@ -1642,15 +1071,14 @@
   left: 10px;
 }
 .navigation-mobile .navigation-mobile-close i {
-  display: block;
-  width: 44px;
-  height: 44px;
-  font-size: 15px;
-  line-height: 44px;
-  text-align: center;
-  background-color: white;
-  color: #666;
-  border-radius: 44px;
+  background-size: 55px;
+  height: 55px;
+  width: 55px;
+  right: 4px;
+  top: 7px;
+  position: fixed;
+  background: url(../img/closeButtonWhite_2x.png) no-repeat;
+  background-size: 55px;
 }
 .navigation {
   position: relative;
@@ -1669,6 +1097,115 @@
   .navigation .navigation-mobile {
     display: none;
   }
+}
+
+.navigation-mobile li a .icon {
+  height: 55px;
+  width: 55px;
+  position: relative;
+  float: left;
+  margin-right: 7px;
+  bottom: 14px;
+  background: url(../img/navIcons_mobile_2x.png) no-repeat;
+  background-size: 820px;
+  top: -13px;
+  left: -9px
+}
+
+.navigation-mobile li a.home .icon {
+  background-position: -5px -6px!important
+}
+
+.navigation-mobile li a.models .icon {
+  background-position: -3px -65px!important
+}
+
+.navigation-mobile li a.find-a-match .icon {
+  background-position: -3px -123px!important
+}
+
+.navigation-mobile li a.find-a-dealer .icon {
+  background-position: -3px -182px!important
+}
+
+.navigation-mobile li a.build-your-own .icon {
+  background: url(../img/navIcons_mobile_builder.png) no-repeat!important;
+  background-position: center 8px!important;
+  background-size: 60%!important
+}
+
+.navigation-mobile li a.owners .icon {
+  background-position: -3px -417px!important
+}
+
+.navigation-mobile li a.special-offers .icon {
+  background-position: -3px -299px!important
+}
+
+.navigation-mobile li a .text {
+  font-size: 18px;
+  font-family: VWHeadWeb-Bold;
+  letter-spacing: .5px
+}
+
+@media (max-width: 320px) {
+  .navigation-mobile li a .text {
+    font-size:14px
+  }
+}
+
+@media (max-width: 375px) {
+  .navigation-mobile li a .text {
+    font-size:15px
+  }
+}
+
+.navigation-mobile .sub {
+  padding: 20px 0;
+  background-color: #f1f5f6
+}
+
+.navigation-mobile .sub li {
+  display: block
+}
+
+.navigation-mobile .sub li a .icon {
+  position: relative;
+  width: 54px;
+  height: 43px;
+  float: left;
+  bottom: 12px;
+  left: 0;
+  background: url(../img/navIcons_mobile_2x.png) no-repeat -104px -157px;
+  background-size: 800px
+}
+
+.navigation-mobile .sub li a.contact .icon {
+  background-position: -109px -60.5px!important;
+  width: 55px;
+  height: 55px
+}
+
+.navigation-mobile .sub li a.me .icon {
+  background-position: -109px -346.5px!important
+}
+
+.navigation-mobile .sub li a.newsroom .icon {
+  background-position: -109px -402px!important
+}
+
+.navigation-mobile .sub li a.corporate .icon {
+  background-position: -109px -175.5px!important
+}
+
+.navigation-mobile .sub li a.financial-services .icon {
+  background-position: -109px -288px!important
+}
+
+.navigation-mobile .sub li a .text {
+  font-size: 12px;
+  font-family: VWHeadWeb-Bold;
+  letter-spacing: .5px
 }
 
 #superTint {
@@ -1684,27 +1221,8 @@
   width: 100%;
   z-index: 110;
 }
+
 .siteNavOpen #superTint {
   background: black;
   visibility: visible;
 }
-
-//.open-menu-nav {
-//  position: relative;
-//  width: 54px;
-//  height: 50px;
-//  background: url(../img/navIcons_mobile_2x.png) no-repeat;
-//  background-position: -398px -71px;
-//  background-size: 900px;
-//  margin-bottom: -2px;
-//}
-//
-//.open-dealer-nav {
-//  position: relative;
-//  width: 54px;
-//  height: 50px;
-//  background: url(../img/navIcons_mobile_2x.png) no-repeat;
-//  background-position: -396px -135px;
-//  background-size: 900px;
-//  margin-bottom: -2px;
-//}
