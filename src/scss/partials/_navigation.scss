@@ -1,3 +1,27 @@
+@each $font-face in VWTextWeb-Regular, VWTextWeb-Bold, VWHeadWeb-Regular, VWHeadWeb-Regular {
+  @font-face {
+    font-family: $font-face; font-style: normal; font-weight: normal;
+    src: url('../fonts/#{$font-face}.eot');
+    src: url('../fonts/#{$font-face}.eot?') format('eot'),
+    url('../fonts/#{$font-face}.woff') format('woff'),
+    url('../fonts/#{$font-face}.ttf')  format('truetype');
+  }
+}
+
+@mixin font($font, $style: normal, $weight: normal) {
+  font-family: $font, sans-serif;
+  font-style:  $style;
+  font-weight: $weight;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: VWHeadWeb-Bold;
+}
+
+body, p {
+  font-family: VWTextWeb-Regular;
+}
+
 //colors
 $white: #fff;
 $black_15: rgba(0, 0, 0, 0.15);
@@ -97,7 +121,7 @@ $black: black;
           padding-left: 10px;
           outline: none;
           -moz-outline: none;
-          font-family: 'Semibold', 'sans-serif';
+          font-family: VWHeadWeb-Regular;
           font-weight: normal;
           font-size: 11px;
           text-transform: uppercase;
@@ -386,7 +410,7 @@ $black: black;
         margin-bottom: 60px;
       }
       a {
-        font-family: 'Semibold', 'sans-serif';
+        font-family: VWHeadWeb-Regular;
         font-weight: normal;
         color: $color_gunsmoke_approx;
         float: left;
@@ -431,8 +455,7 @@ $black: black;
         text-decoration: none;
         font-size: 11px;
         text-transform: uppercase;
-        font-weight: 200;
-        font-family: 'Black', 'sans-serif';
+        font-family: VWHeadWeb-Regular;
         font-weight: normal;
         background-image: url('../img/navIcons_1x.png');
         -webkit-box-sizing: border-box;
@@ -967,7 +990,7 @@ $black: black;
         font-size: 9px;
         text-transform: uppercase;
         position: absolute;
-        bottom: 0;
+        bottom: 5px;
         left: 50%;
         transform: translatex(-50%);
       }
@@ -1033,7 +1056,7 @@ $black: black;
           li {
             a {
               color: $color_gunsmoke_approx;
-              font-family: 'Black', 'sans-serif';
+              font-family: VWHeadWeb-Regular;
               font-size: 15px;
               display: block;
               background-color: $white;
@@ -1116,12 +1139,12 @@ $black: black;
             a {
               display: block;
               font-size: 13px;
-              font-family: 'Black', 'sans-serif';
+              font-family: VWHeadWeb-Regular;
               font-weight: normal;
               text-decoration: none;
               text-transform: uppercase;
               line-height: 30px;
-              padding: 10px 10px 16px 18px;
+              padding: 10px 0 16px 0;
               color: $color_gunsmoke_approx;
               i {
                 width: 36px;
@@ -1205,7 +1228,7 @@ $black: black;
           text-align: center;
           color: $white;
           text-decoration: none;
-          font-family: 'Black', 'sans-serif';
+          font-family: VWHeadWeb-Regular;
           font-weight: normal;
           i {
             display: block;
@@ -1304,7 +1327,7 @@ $black: black;
         }
         .text {
           font-size: 12px;
-          font-family: 'VWHeadWeb-Bold';
+          font-family: VWHeadWeb-Regular;
           letter-spacing: .5px;
         }
         &.contact .icon {
@@ -1341,12 +1364,19 @@ $black: black;
       left: -9px;
     }
     .text {
-      font-size: 18px;
-      font-family: 'VWHeadWeb-Bold';
+      font-size: 17px;
+      font-family: VWHeadWeb-Regular;
       letter-spacing: .5px;
     }
     &.home .icon {
-      background-position: -5px -6px!important;
+      display: inline-block;
+      height: 44px;
+      background: url(../img/vw-logo-with-title.png) no-repeat;
+      background-size: contain;
+      position: relative;
+      background-position: center !important;
+      top: -10px;
+      left: -10px;
     }
     &.models .icon {
       background-position: -3px -65px!important;

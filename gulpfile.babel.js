@@ -13,6 +13,8 @@ global.paths = {
     // image sources files
     'img': './src/img/*',
     // source folder
+    'fonts': './src/fonts/*',
+    // source folder
     'src': './src',
     // source CSS folder
     'css': './src/css',

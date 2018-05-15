@@ -11,6 +11,7 @@ function navigation() {
     const mobileNavTint = document.querySelector('.navigation-mobile-tint');
     const mobileNavClose = document.querySelector('.navigation-mobile-close');
     const superTint = document.getElementById('superTint');
+    const mobileTint = document.querySelector('.navigation-mobile-tint');
 
     navSwitch.addEventListener('click', (e) => {
         e.preventDefault();
@@ -34,6 +35,14 @@ function navigation() {
     });
 
     superTint.addEventListener('click', (e) => {
+        e.preventDefault();
+        body.classList.remove('siteNavOpen');
+        mobileNav.classList.remove('visible');
+        mobileNavTint.classList.remove('visible');
+        mobileNavClose.classList.remove('visible');
+    });
+
+    mobileTint.addEventListener('click', (e) => {
         e.preventDefault();
         body.classList.remove('siteNavOpen');
         mobileNav.classList.remove('visible');
