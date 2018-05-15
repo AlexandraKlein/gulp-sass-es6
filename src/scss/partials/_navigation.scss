@@ -1,0 +1,1689 @@
+.navigation-desktop {
+  background: #fff;
+  width: 330px;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 8000;
+  -webkit-backface-visibility: hidden !important;
+  *zoom: 1;
+  -webkit-box-shadow: 10px 0px 30px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 10px 0px 30px rgba(0, 0, 0, 0.15);
+  box-shadow: 10px 0px 30px rgba(0, 0, 0, 0.15);
+  left: -235px;
+  -webkit-transition: left 300ms;
+  -moz-transition: left 300ms;
+  -o-transition: left 300ms;
+  transition: left 300ms;
+}
+.navigation-desktop:before,
+.navigation-desktop:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.navigation-desktop:after {
+  clear: both;
+}
+.siteNavOpen .navigation-desktop {
+  left: 0;
+  z-index: 10000;
+  -webkit-backface-visibility: hidden !important;
+}
+.navigation-desktop #hiddenNav {
+  width: 235px;
+  height: 100%;
+  float: left;
+  position: relative;
+  border-right: 1px solid #e7eaec;
+  -webkit-backface-visibility: hidden !important;
+  /*overflow-y: auto;*/
+
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.navigation-desktop #hiddenNav .liveChat {
+  display: block;
+  width: 160px;
+  height: 36px;
+  margin: 40px auto 0 32px;
+  background: #f7f7f7 url('../img/chatIcon.png') 108px 10px no-repeat;
+  color: #01b1ec;
+  font-size: 12px;
+  text-transform: uppercase;
+  text-decoration: none;
+  -webkit-border-radius: 40px;
+  -moz-border-radius: 40px;
+  border-radius: 40px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 14px 42px;
+}
+.navigation-desktop #hiddenNav .searchForm {
+  margin: 0;
+  position: relative;
+}
+.navigation-desktop #hiddenNav .searchForm .searchBox {
+  display: block;
+  width: 160px;
+  height: 40px;
+  margin: 40px auto;
+  margin-top: 14px;
+  color: #768188;
+  background: #EEE;
+  border: 1px solid #d5d5d5;
+  -webkit-border-radius: 40px;
+  -moz-border-radius: 40px;
+  border-radius: 40px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0 15px;
+  font-size: 13px;
+  outline: none;
+}
+.navigation-desktop #hiddenNav .searchForm .searchButton {
+  display: block;
+  width: 32px;
+  height: 32px;
+  position: absolute;
+  top: 3px;
+  right: 40px;
+  border: none;
+  background: transparent url('../img/navIcons_1x.png') -30px -343px;
+  text-indent: -9999px;
+}
+.navigation-desktop #hiddenNav ul {
+  list-style-type: none;
+  margin: 36px 0 0;
+  padding: 0;
+}
+.navigation-desktop #hiddenNav ul li.absorbed.hidden {
+  display: none;
+}
+.navigation-desktop #hiddenNav ul li > :not(a) {
+  display: none;
+}
+.navigation-desktop #hiddenNav ul li a {
+  color: #808588;
+  display: block;
+  height: 60px;
+  line-height: 60px;
+  text-decoration: none;
+  padding-left: 10px;
+  outline: none;
+  -moz-outline: none;
+  font-family: "Semibold", sans-serif;
+  font-weight: normal;
+  font-size: 11px;
+  text-transform: uppercase;
+  background-color: transparent;
+}
+.navigation-desktop #hiddenNav ul li a:hover {
+  color: #444 !important;
+}
+.navigation-desktop #hiddenNav ul li a .icon {
+  background: transparent url('../img/navIcons_1x.png');
+  display: inline-block;
+  width: 55px;
+  height: 60px;
+  float: left;
+  margin-right: 15px;
+}
+.navigation-desktop #hiddenNav ul li a:hover {
+  background-color: #f1f5f6;
+}
+.navigation-desktop #hiddenNav ul li a:active,
+.navigation-desktop #hiddenNav ul li a.active {
+  background-color: transparent;
+}
+.navigation-desktop #hiddenNav ul li a.specialOffers .icon,
+.navigation-desktop #hiddenNav ul li a.special-offers .icon {
+  background-position: 0px -490px;
+}
+.navigation-desktop #hiddenNav ul li a.specialOffers:hover .icon,
+.navigation-desktop #hiddenNav ul li a.special-offers:hover .icon {
+  background-position: -80px -490px;
+}
+.navigation-desktop #hiddenNav ul li a.specialOffers:active .icon,
+.navigation-desktop #hiddenNav ul li a.special-offers:active .icon,
+.navigation-desktop #hiddenNav ul li a.specialOffers.active .icon,
+.navigation-desktop #hiddenNav ul li a.special-offers.active .icon {
+  background-position: -160px -490px;
+}
+.navigation-desktop #hiddenNav ul li a.financialServices .icon,
+.navigation-desktop #hiddenNav ul li a.financial-services .icon {
+  background-position: 0px -572px;
+}
+.navigation-desktop #hiddenNav ul li a.financialServices:hover .icon,
+.navigation-desktop #hiddenNav ul li a.financial-services:hover .icon {
+  background-position: -80px -572px;
+}
+.navigation-desktop #hiddenNav ul li a.financialServices:active .icon,
+.navigation-desktop #hiddenNav ul li a.financial-services:active .icon,
+.navigation-desktop #hiddenNav ul li a.financialServices.active .icon,
+.navigation-desktop #hiddenNav ul li a.financial-services.active .icon {
+  background-position: -160px -572px;
+}
+.navigation-desktop #hiddenNav ul li a.me .icon {
+  background-position: 0px -174px;
+}
+.navigation-desktop #hiddenNav ul li a.me:hover .icon {
+  background-position: -80px -174px;
+}
+.navigation-desktop #hiddenNav ul li a.me:active .icon,
+.navigation-desktop #hiddenNav ul li a.me.active .icon {
+  background-position: -160px -174px;
+}
+.navigation-desktop #hiddenNav ul li a.certified-pre-owned .icon {
+  background-position: 0px -1151px;
+}
+.navigation-desktop #hiddenNav ul li a.certified-pre-owned:hover .icon {
+  background-position: -80px -1151px;
+}
+.navigation-desktop #hiddenNav ul li a.certified-pre-owned:active .icon,
+.navigation-desktop #hiddenNav ul li a.certified-pre-owned.active .icon {
+  background-position: -160px -1151px;
+}
+.navigation-desktop #hiddenNav ul li a.socialNews .icon,
+.navigation-desktop #hiddenNav ul li a.social-news .icon {
+  background-position: 0px -728px;
+}
+.navigation-desktop #hiddenNav ul li a.socialNews:hover .icon,
+.navigation-desktop #hiddenNav ul li a.social-news:hover .icon {
+  background-position: -80px -728px;
+}
+.navigation-desktop #hiddenNav ul li a.socialNews:active .icon,
+.navigation-desktop #hiddenNav ul li a.social-news:active .icon,
+.navigation-desktop #hiddenNav ul li a.socialNews.active .icon,
+.navigation-desktop #hiddenNav ul li a.social-news.active .icon {
+  background-position: -160px -728px;
+}
+.navigation-desktop #hiddenNav ul li a.corporate .icon {
+  background-position: 0px -811px;
+}
+.navigation-desktop #hiddenNav ul li a.corporate:hover .icon {
+  background-position: -80px -811px;
+}
+.navigation-desktop #hiddenNav ul li a.corporate:active .icon,
+.navigation-desktop #hiddenNav ul li a.corporate.active .icon {
+  background-position: -160px -811px;
+}
+.navigation-desktop #hiddenNav ul li a.newsroom .icon {
+  background-position: 0px -983px;
+}
+.navigation-desktop #hiddenNav ul li a.newsroom:hover .icon {
+  background-position: -80px -983px;
+}
+.navigation-desktop #hiddenNav ul li a.newsroom:active .icon,
+.navigation-desktop #hiddenNav ul li a.newsroom.active .icon {
+  background-position: -160px -983px;
+}
+.navigation-desktop #hiddenNav ul li a.contact .icon {
+  background-position: 0px -892px;
+}
+.navigation-desktop #hiddenNav ul li a.contact:hover .icon {
+  background-position: -80px -892px;
+}
+.navigation-desktop #hiddenNav ul li a.contact:active .icon,
+.navigation-desktop #hiddenNav ul li a.contact.active .icon {
+  background-position: -160px -892px;
+}
+.navigation-desktop #hiddenNav ul li a.owners .icon {
+  background-position: 0px -648px;
+}
+.navigation-desktop #hiddenNav ul li a.owners:hover .icon {
+  background-position: -86px -648px;
+}
+.navigation-desktop #hiddenNav ul li a.owners:active .icon,
+.navigation-desktop #hiddenNav ul li a.owners.active .icon {
+  background-position: -172px -648px;
+}
+.navigation-desktop #hiddenNav ul li a.findADealer .icon,
+.navigation-desktop #hiddenNav ul li a.find-a-dealer .icon {
+  background-position: 0px -1070px;
+}
+.navigation-desktop #hiddenNav ul li a.findADealer:hover .icon,
+.navigation-desktop #hiddenNav ul li a.find-a-dealer:hover .icon {
+  background-position: -80px -1070px;
+}
+.navigation-desktop #hiddenNav ul li a.findADealer:active .icon,
+.navigation-desktop #hiddenNav ul li a.find-a-dealer:active .icon,
+.navigation-desktop #hiddenNav ul li a.findADealer.active .icon,
+.navigation-desktop #hiddenNav ul li a.find-a-dealer.active .icon {
+  background-position: -160px -1070px;
+}
+.navigation-desktop #hiddenNav ul li a.build-your-own .icon {
+  background-position: 0px -404px;
+}
+.navigation-desktop #hiddenNav ul li a.build-your-own:hover .icon {
+  background-position: -80px -404px;
+}
+.navigation-desktop #hiddenNav ul li a.build-your-own:active .icon,
+.navigation-desktop #hiddenNav ul li a.build-your-own.active .icon {
+  background-position: -162px -404px;
+}
+.navigation-desktop #hiddenNav ul li a.find-a-match .icon {
+  background-position: -1px -89px;
+}
+.navigation-desktop #hiddenNav ul li a.find-a-match:hover .icon {
+  background-position: -81px -89px;
+}
+.navigation-desktop #hiddenNav ul li a.find-a-match:active .icon,
+.navigation-desktop #hiddenNav ul li a.find-a-match.active .icon {
+  background-position: -164px -77px;
+}
+.navigation-desktop #hiddenNav ul li a.models .icon {
+  background-position: 8px 0px;
+}
+.navigation-desktop #hiddenNav ul li a.models:hover .icon {
+  background-position: -52px 0px;
+}
+.navigation-desktop #hiddenNav ul li a.models:active .icon,
+.navigation-desktop #hiddenNav ul li a.models.active .icon {
+  background-position: -104px 0px;
+}
+.navigation-desktop #hiddenNav ul li a.models .icon {
+  background-size: 180px !important;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (-moz-min-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  .navigation-desktop #hiddenNav ul li a .icon {
+    background-image: url('../img/navIcons_2x.png');
+    background-size: 240px 1240px;
+  }
+  .navigation-desktop #hiddenNav ul li a.specialOffers .icon,
+  .navigation-desktop #hiddenNav ul li a.special-offers .icon {
+    background-position: 0px -444px;
+  }
+  .navigation-desktop #hiddenNav ul li a.specialOffers:hover .icon,
+  .navigation-desktop #hiddenNav ul li a.special-offers:hover .icon {
+    background-position: -80px -444px;
+  }
+  .navigation-desktop #hiddenNav ul li a.specialOffers:active .icon,
+  .navigation-desktop #hiddenNav ul li a.special-offers:active .icon,
+  .navigation-desktop #hiddenNav ul li a.specialOffers.active .icon,
+  .navigation-desktop #hiddenNav ul li a.special-offers.active .icon {
+    background-position: -160px -444px;
+  }
+  .navigation-desktop #hiddenNav ul li a.financialServices .icon,
+  .navigation-desktop #hiddenNav ul li a.financial-services .icon {
+    background-position: 0px -520px;
+  }
+  .navigation-desktop #hiddenNav ul li a.financialServices:hover .icon,
+  .navigation-desktop #hiddenNav ul li a.financial-services:hover .icon {
+    background-position: -80px -520px;
+  }
+  .navigation-desktop #hiddenNav ul li a.financialServices:active .icon,
+  .navigation-desktop #hiddenNav ul li a.financial-services:active .icon,
+  .navigation-desktop #hiddenNav ul li a.financialServices.active .icon,
+  .navigation-desktop #hiddenNav ul li a.financial-services.active .icon {
+    background-position: -160px -520px;
+  }
+  .navigation-desktop #hiddenNav ul li a.me .icon {
+    background-position: 0px -156px;
+  }
+  .navigation-desktop #hiddenNav ul li a.me:hover .icon {
+    background-position: -80px -156px;
+  }
+  .navigation-desktop #hiddenNav ul li a.me:active .icon,
+  .navigation-desktop #hiddenNav ul li a.me.active .icon {
+    background-position: -160px -156px;
+  }
+  .navigation-desktop #hiddenNav ul li a.certified-pre-owned .icon {
+    background-position: 0px -1048px;
+  }
+  .navigation-desktop #hiddenNav ul li a.certified-pre-owned:hover .icon {
+    background-position: -80px -1048px;
+  }
+  .navigation-desktop #hiddenNav ul li a.certified-pre-owned:active .icon,
+  .navigation-desktop #hiddenNav ul li a.certified-pre-owned.active .icon {
+    background-position: -160px -1048px;
+  }
+  .navigation-desktop #hiddenNav ul li a.socialNews .icon,
+  .navigation-desktop #hiddenNav ul li a.social-news .icon {
+    background-position: 0px -663px;
+  }
+  .navigation-desktop #hiddenNav ul li a.socialNews:hover .icon,
+  .navigation-desktop #hiddenNav ul li a.social-news:hover .icon {
+    background-position: -80px -663px;
+  }
+  .navigation-desktop #hiddenNav ul li a.socialNews:active .icon,
+  .navigation-desktop #hiddenNav ul li a.social-news:active .icon,
+  .navigation-desktop #hiddenNav ul li a.socialNews.active .icon,
+  .navigation-desktop #hiddenNav ul li a.social-news.active .icon {
+    background-position: -160px -663px;
+  }
+  .navigation-desktop #hiddenNav ul li a.corporate .icon {
+    background-position: 0px -737px;
+  }
+  .navigation-desktop #hiddenNav ul li a.corporate:hover .icon {
+    background-position: -80px -737px;
+  }
+  .navigation-desktop #hiddenNav ul li a.corporate:active .icon,
+  .navigation-desktop #hiddenNav ul li a.corporate.active .icon {
+    background-position: -160px -737px;
+  }
+  .navigation-desktop #hiddenNav ul li a.newsroom .icon {
+    background-position: 0px -878px;
+  }
+  .navigation-desktop #hiddenNav ul li a.newsroom:hover .icon {
+    background-position: -80px -878px;
+  }
+  .navigation-desktop #hiddenNav ul li a.newsroom:active .icon,
+  .navigation-desktop #hiddenNav ul li a.newsroom.active .icon {
+    background-position: -160px -878px;
+  }
+  .navigation-desktop #hiddenNav ul li a.contact .icon {
+    background-position: 0px -810px;
+  }
+  .navigation-desktop #hiddenNav ul li a.contact:hover .icon {
+    background-position: -80px -810px;
+  }
+  .navigation-desktop #hiddenNav ul li a.contact:active .icon,
+  .navigation-desktop #hiddenNav ul li a.contact.active .icon {
+    background-position: -160px -810px;
+  }
+  .navigation-desktop #hiddenNav ul li a.owners .icon {
+    background-position: 0px -590px;
+  }
+  .navigation-desktop #hiddenNav ul li a.owners:hover .icon {
+    background-position: -80px -590px;
+  }
+  .navigation-desktop #hiddenNav ul li a.owners:active .icon,
+  .navigation-desktop #hiddenNav ul li a.owners.active .icon {
+    background-position: -160px -590px;
+  }
+  .navigation-desktop #hiddenNav ul li a.findADealer .icon,
+  .navigation-desktop #hiddenNav ul li a.find-a-dealer .icon {
+    background-position: 0px -973px;
+  }
+  .navigation-desktop #hiddenNav ul li a.findADealer:hover .icon,
+  .navigation-desktop #hiddenNav ul li a.find-a-dealer:hover .icon {
+    background-position: -80px -973px;
+  }
+  .navigation-desktop #hiddenNav ul li a.findADealer:active .icon,
+  .navigation-desktop #hiddenNav ul li a.find-a-dealer:active .icon,
+  .navigation-desktop #hiddenNav ul li a.findADealer.active .icon,
+  .navigation-desktop #hiddenNav ul li a.find-a-dealer.active .icon {
+    background-position: -160px -973px;
+  }
+  .navigation-desktop #hiddenNav ul li a.build-your-own .icon {
+    background-position: 0px -366px;
+  }
+  .navigation-desktop #hiddenNav ul li a.build-your-own:hover .icon {
+    background-position: -80px -366px;
+  }
+  .navigation-desktop #hiddenNav ul li a.build-your-own:active .icon,
+  .navigation-desktop #hiddenNav ul li a.build-your-own.active .icon {
+    background-position: -162px -366px;
+  }
+  .navigation-desktop #hiddenNav ul li a.find-a-match .icon {
+    background-position: 4px -77px;
+  }
+  .navigation-desktop #hiddenNav ul li a.find-a-match:hover .icon {
+    background-position: -69px -77px;
+  }
+  .navigation-desktop #hiddenNav ul li a.find-a-match:active .icon,
+  .navigation-desktop #hiddenNav ul li a.find-a-match.active .icon {
+    background-position: -138px -77px;
+  }
+  .navigation-desktop #hiddenNav ul li a.find-a-match .icon {
+    background-size: 220px !important;
+  }
+  .navigation-desktop #hiddenNav ul li a.models .icon {
+    background-position: 8px 0px;
+  }
+  .navigation-desktop #hiddenNav ul li a.models:hover .icon {
+    background-position: -52px 0px;
+  }
+  .navigation-desktop #hiddenNav ul li a.models:active .icon,
+  .navigation-desktop #hiddenNav ul li a.models.active .icon {
+    background-position: -104px 0px;
+  }
+  .navigation-desktop #hiddenNav ul li a.models .icon {
+    background-size: 180px !important;
+  }
+
+}
+.navigation-desktop #hiddenNav ul li a .text br {
+  display: none;
+}
+.navigation-desktop #hiddenNav .siteLanguage {
+  box-sizing: border-box;
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 0 40px;
+}
+.navigation-desktop #hiddenNav .siteLanguage.nonSticky {
+  position: relative;
+  bottom: 0;
+  margin-top: 20px;
+  margin-bottom: 60px;
+}
+.navigation-desktop #hiddenNav .siteLanguage a {
+  font-family: "Semibold", sans-serif;
+  font-weight: normal;
+  color: #808588;
+  float: left;
+  font-size: 12px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.navigation-desktop #visibleNav {
+  width: 95px;
+  height: 100%;
+  float: left;
+  position: relative;
+  overflow: hidden !important;
+}
+.navigation-desktop #visibleNav #logo {
+  background: url('../img/vwLogo_1x.png') center center no-repeat;
+  height: 67px;
+  padding: 15px 0 30px;
+  border-bottom: 1px solid #f1f5f6;
+  text-indent: -9999px;
+  display: block;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (-moz-min-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  .navigation-desktop #visibleNav #logo {
+    background-image: url('../img/vwLogo_2x.png');
+    /* we don't have the vwLogoNew_2x file */
+
+    background-size: 71px 90px;
+  }
+
+}
+.navigation-desktop #visibleNav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  /* li */
+
+}
+.navigation-desktop #visibleNav ul.location {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+.navigation-desktop #visibleNav ul li a {
+  display: block;
+  height: 91px;
+  line-height: 12px;
+  text-align: center;
+  cursor: pointer;
+  border-bottom: 1px solid #e7eaec;
+  padding: 55px 10px 10px 10px;
+  width: 100%;
+  text-decoration: none;
+  font-size: 11px;
+  text-transform: uppercase;
+  font-weight: 200;
+  font-family: "Black", sans-serif;
+  font-weight: normal;
+  background-image: url('../img/navIcons_1x.png');
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  color: #808588;
+  background-color: transparent;
+  /*
+          .backgroundPositionStates(@defaultX, @defaultY, @hoverX, @hoverY, @activeX, @activeY) {
+            background-position: @defaultX @defaultY;
+            &:hover { background-position: @hoverX @hoverY; }
+            &:active, &.active { background-position: @activeX @activeY; }
+          }*/
+
+}
+.navigation-desktop #visibleNav ul li a:hover {
+  color: #333333;
+}
+.navigation-desktop #visibleNav ul li a:active,
+.navigation-desktop #visibleNav ul li a.active {
+  color: #01b1ec;
+}
+.navigation-desktop #visibleNav ul li a:hover {
+  background-color: #f8faf9;
+}
+.navigation-desktop #visibleNav ul li a:active,
+.navigation-desktop #visibleNav ul li a.active {
+  background-color: transparent;
+}
+.navigation-desktop #visibleNav ul li a.models {
+  background-position: 8px -5px;
+}
+.navigation-desktop #visibleNav ul li a.models:hover {
+  background-position: -72px -5px;
+}
+.navigation-desktop #visibleNav ul li a.models:active,
+.navigation-desktop #visibleNav ul li a.models.active {
+  background-position: -72px -5px;
+}
+.navigation-desktop #visibleNav ul li a.find-a-match {
+  background-position: 8px -90px;
+}
+.navigation-desktop #visibleNav ul li a.find-a-match:hover {
+  background-position: -72px -90px;
+}
+.navigation-desktop #visibleNav ul li a.find-a-match:active,
+.navigation-desktop #visibleNav ul li a.find-a-match.active {
+  background-position: -72px -90px;
+}
+.navigation-desktop #visibleNav ul li a.find-a-dealer {
+  background-position: 8px -1070px;
+}
+.navigation-desktop #visibleNav ul li a.find-a-dealer:hover {
+  background-position: -72px -1070px;
+}
+.navigation-desktop #visibleNav ul li a.find-a-dealer:active,
+.navigation-desktop #visibleNav ul li a.find-a-dealer.active {
+  background-position: -72px -1070px;
+}
+.navigation-desktop #visibleNav ul li a.me {
+  background-position: 8px -170px;
+}
+.navigation-desktop #visibleNav ul li a.me:hover {
+  background-position: -72px -170px;
+}
+.navigation-desktop #visibleNav ul li a.me:active,
+.navigation-desktop #visibleNav ul li a.me.active {
+  background-position: -72px -170px;
+}
+.navigation-desktop #visibleNav ul li a.location {
+  background-position: 8px -974px;
+}
+.navigation-desktop #visibleNav ul li a.location:hover {
+  background-position: -72px -974px;
+}
+.navigation-desktop #visibleNav ul li a.location:active,
+.navigation-desktop #visibleNav ul li a.location.active {
+  background-position: -72px -974px;
+}
+.navigation-desktop #visibleNav ul li a.navSwitch {
+  background-position: 8px -245px;
+}
+.navigation-desktop #visibleNav ul li a.navSwitch:hover {
+  background-position: -72px -245px;
+}
+.navigation-desktop #visibleNav ul li a.navSwitch:active,
+.navigation-desktop #visibleNav ul li a.navSwitch.active {
+  background-position: -72px -245px;
+}
+.navigation-desktop #visibleNav ul li a.build-your-own {
+  background-position: 8px -405px;
+}
+.navigation-desktop #visibleNav ul li a.build-your-own:hover {
+  background-position: -72px -405px;
+}
+.navigation-desktop #visibleNav ul li a.build-your-own:active,
+.navigation-desktop #visibleNav ul li a.build-your-own.active {
+  background-position: -72px -405px;
+}
+.navigation-desktop #visibleNav ul li a.owners {
+  background-position: 8px -647px;
+}
+.navigation-desktop #visibleNav ul li a.owners:hover {
+  background-position: -78px -647px;
+}
+.navigation-desktop #visibleNav ul li a.owners:active,
+.navigation-desktop #visibleNav ul li a.owners.active {
+  background-position: -78px -647px;
+}
+.navigation-desktop #visibleNav ul li a .text {
+  margin-top: 10px;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (-moz-min-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  .navigation-desktop #visibleNav ul li a {
+    background-image: url('../img/navIcons_2x.png');
+    background-size: 240px;
+  }
+  .navigation-desktop #visibleNav ul li a.models {
+    background-position: 8px -5px;
+  }
+  .navigation-desktop #visibleNav ul li a.models:hover {
+    background-position: -72px -5px;
+  }
+  .navigation-desktop #visibleNav ul li a.models:active,
+  .navigation-desktop #visibleNav ul li a.models.active {
+    background-position: -72px -5px;
+  }
+  .navigation-desktop #visibleNav ul li a.find-a-match {
+    background-position: 8px -90px;
+  }
+  .navigation-desktop #visibleNav ul li a.find-a-match:hover {
+    background-position: -72px -90px;
+  }
+  .navigation-desktop #visibleNav ul li a.find-a-match:active,
+  .navigation-desktop #visibleNav ul li a.find-a-match.active {
+    background-position: -72px -90px;
+  }
+  .navigation-desktop #visibleNav ul li a.find-a-dealer {
+    background-position: 8px -1070px;
+  }
+  .navigation-desktop #visibleNav ul li a.find-a-dealer:hover {
+    background-position: -72px -1070px;
+  }
+  .navigation-desktop #visibleNav ul li a.find-a-dealer:active,
+  .navigation-desktop #visibleNav ul li a.find-a-dealer.active {
+    background-position: -72px -1070px;
+  }
+  .navigation-desktop #visibleNav ul li a.me {
+    background-position: 8px -170px;
+  }
+  .navigation-desktop #visibleNav ul li a.me:hover {
+    background-position: -72px -170px;
+  }
+  .navigation-desktop #visibleNav ul li a.me:active,
+  .navigation-desktop #visibleNav ul li a.me.active {
+    background-position: -72px -170px;
+  }
+  .navigation-desktop #visibleNav ul li a.location {
+    background-position: 8px -974px;
+  }
+  .navigation-desktop #visibleNav ul li a.location:hover {
+    background-position: -72px -974px;
+  }
+  .navigation-desktop #visibleNav ul li a.location:active,
+  .navigation-desktop #visibleNav ul li a.location.active {
+    background-position: -72px -974px;
+  }
+  .navigation-desktop #visibleNav ul li a.navSwitch {
+    background-position: 8px -245px;
+  }
+  .navigation-desktop #visibleNav ul li a.navSwitch:hover {
+    background-position: -72px -245px;
+  }
+  .navigation-desktop #visibleNav ul li a.navSwitch:active,
+  .navigation-desktop #visibleNav ul li a.navSwitch.active {
+    background-position: -72px -245px;
+  }
+  .navigation-desktop #visibleNav ul li a.build-your-own {
+    background-position: 8px -405px;
+  }
+  .navigation-desktop #visibleNav ul li a.build-your-own:hover {
+    background-position: -72px -405px;
+  }
+  .navigation-desktop #visibleNav ul li a.build-your-own:active,
+  .navigation-desktop #visibleNav ul li a.build-your-own.active {
+    background-position: -72px -405px;
+  }
+  .navigation-desktop #visibleNav ul li a.owners {
+    background-position: 8px -1286px;
+  }
+  .navigation-desktop #visibleNav ul li a.owners:hover {
+    background-position: -71px -1286px;
+  }
+  .navigation-desktop #visibleNav ul li a.owners:active,
+  .navigation-desktop #visibleNav ul li a.owners.active {
+    background-position: -78px -1286px;
+  }
+
+}
+.navigation-mobile .navigation-mobile-top-nav {
+  *zoom: 1;
+  background-color: white;
+  height: 60px;
+  position: relative;
+  text-align: center;
+  width: 100%;
+  z-index: 100;
+}
+.navigation-mobile .navigation-mobile-top-nav:before,
+.navigation-mobile .navigation-mobile-top-nav:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.navigation-mobile .navigation-mobile-top-nav:after {
+  clear: both;
+}
+.siteNavHideMobile .navigation-mobile .navigation-mobile-top-nav {
+  transform: translatey(-100%);
+}
+.navigation-mobile .navigation-mobile-top-nav a {
+  color: #88979e;
+  display: inline-block;
+  height: 60px;
+  position: relative;
+  text-decoration: none;
+  width: 60px;
+}
+.navigation-mobile .navigation-mobile-top-nav a.vw-logo {
+  width: 33px;
+  height: 33px;
+  margin-top: 13.5px;
+  background: url('../img/vw-logo-only.png') no-repeat;
+  background-size: contain;
+}
+.navigation-mobile .navigation-mobile-top-nav a i {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translatex(-50%);
+}
+.navigation-mobile .navigation-mobile-top-nav a span {
+  font-weight: bold;
+  font-size: 9px;
+  text-transform: uppercase;
+  position: absolute;
+  bottom: 12px;
+  left: 50%;
+  transform: translatex(-50%);
+}
+.navigation-mobile .navigation-mobile-top-nav a.open-menu-nav {
+  float: left;
+}
+.navigation-mobile .navigation-mobile-top-nav a.open-menu-nav i {
+  font-size: 18px;
+  bottom: 28px;
+  left: 27px;
+}
+.navigation-mobile .navigation-mobile-top-nav a.open-dealer-nav {
+  float: right;
+}
+.navigation-mobile .navigation-mobile-top-nav a.open-dealer-nav i {
+  font-size: 30px;
+  line-height: 38px;
+}
+.navigation-mobile .navigation-mobile-menu-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: calc(100% - 64px);
+  height: 100%;
+  z-index: 120;
+  background-color: white;
+  -webkit-transition: all 500ms ease;
+  -moz-transition: all 500ms ease;
+  -o-transition: all 500ms ease;
+  transition: all 500ms ease;
+  transform: translatex(-100%);
+}
+.navigation-mobile .navigation-mobile-menu-nav.visible {
+  transform: translatex(0);
+}
+.navigation-mobile .navigation-mobile-menu-nav .scrollable {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow-y: auto;
+}
+.navigation-mobile .navigation-mobile-menu-nav .scrollable ul.main {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+.navigation-mobile .navigation-mobile-menu-nav .scrollable ul.main li a {
+  display: block;
+  font-size: 17px;
+  text-transform: uppercase;
+  border-bottom: 1px solid #EEE;
+  padding: 18px 14px;
+  text-decoration: none;
+  font-family: "Black", sans-serif;
+  font-weight: normal;
+  color: #808588;
+}
+.navigation-mobile .navigation-mobile-menu-nav .scrollable ul.main li a i {
+  width: 44px;
+  line-height: 44px;
+  font-size: 48px;
+  margin-right: 7px;
+}
+.navigation-mobile .navigation-mobile-menu-nav .scrollable ul.main li a span {
+  position: relative;
+  top: -10px;
+}
+.navigation-mobile .navigation-mobile-menu-nav .scrollable ul.main li.mobile-menu-main-home i {
+  display: inline-block;
+  height: 44px;
+  background: url('../img/vw-logo-with-title.png') no-repeat;
+  background-size: contain;
+  margin: 0 22px 0 10px;
+  position: relative;
+  top: 6px;
+  left: 6px;
+}
+.navigation-mobile .navigation-mobile-menu-nav .scrollable ul.main li.mobile-menu-main-models i.vw-icon:before {
+  content: '\e809';
+}
+.navigation-mobile .navigation-mobile-menu-nav .scrollable ul.main li.mobile-menu-main-find-match i.vw-icon:before {
+  content: '\e819';
+}
+.navigation-mobile .navigation-mobile-menu-nav .scrollable ul.main li.mobile-menu-main-find-match i.vw-icon {
+  font-size: 32px;
+  margin-right: 29px;
+}
+.navigation-mobile .navigation-mobile-menu-nav .scrollable ul.main li.mobile-menu-main-find-a-dealer i.vw-icon:before {
+  content: '\e81d';
+}
+.navigation-mobile .navigation-mobile-menu-nav .scrollable ul.main li.mobile-menu-main-builder i.vw-icon:before {
+  content: '\e80f';
+}
+.navigation-mobile .navigation-mobile-menu-nav .scrollable ul.main li.mobile-menu-main-owners i.vw-icon:before {
+  content: '\e811';
+}
+.navigation-mobile .navigation-mobile-menu-nav .scrollable ul.main li.mobile-menu-main-special-offers i.vw-icon:before {
+  content: '\e822';
+}
+.navigation-mobile .navigation-mobile-menu-nav .scrollable ul.main li.mobile-menu-main-builder i {
+  font-size: 34px;
+  line-height: 48px;
+  margin: 0 16px 0 10px;
+}
+.navigation-mobile .navigation-mobile-menu-nav .scrollable ul.main li.mobile-menu-main-builder span {
+  top: -3px;
+}
+.navigation-mobile .navigation-mobile-menu-nav .scrollable ul.main li.mobile-menu-main-special-offers i {
+  font-size: 29px;
+  line-height: 48px;
+  margin: 0 22px 0 10px;
+}
+.navigation-mobile .navigation-mobile-menu-nav .scrollable ul.main li.mobile-menu-main-special-offers span {
+  top: -3px;
+}
+.navigation-mobile .navigation-mobile-menu-nav .scrollable ul.sub {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  background-color: #EEE;
+  padding: 20px 20px 100px 20px;
+}
+.navigation-mobile .navigation-mobile-menu-nav .scrollable ul.sub li a {
+  display: block;
+  font-size: 13px;
+  font-family: "Black", sans-serif;
+  font-weight: normal;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #808588;
+  padding: 10px 0;
+}
+.navigation-mobile .navigation-mobile-menu-nav .scrollable ul.sub li a i {
+  width: 36px;
+  height: 36px;
+  font-size: 32px;
+  line-height: 20px;
+  margin-left: 5px;
+}
+.navigation-mobile .navigation-mobile-menu-nav .scrollable ul.sub li a span {
+  position: relative;
+  top: -5px;
+}
+.navigation-mobile .navigation-mobile-menu-nav .scrollable ul.sub li.mobile-menu-sub-contact i.vw-icon:before {
+  content: '\e81c';
+}
+.navigation-mobile .navigation-mobile-menu-nav .scrollable ul.sub li.mobile-menu-sub-newsroom i {
+  font-size: 24px;
+  margin: 0 9px 0 8px;
+}
+.navigation-mobile .navigation-mobile-menu-nav .scrollable ul.sub li.mobile-menu-sub-newsroom i.vw-icon:before {
+  content: '\e81b';
+}
+.navigation-mobile .navigation-mobile-menu-nav .scrollable ul.sub li.mobile-menu-sub-me i {
+  font-size: 24px;
+  margin: 0 6px 0 12px;
+}
+.navigation-mobile .navigation-mobile-menu-nav .scrollable ul.sub li.mobile-menu-sub-me i.vw-icon:before {
+  content: '\e818';
+}
+.navigation-mobile .navigation-mobile-menu-nav .scrollable ul.sub li.mobile-menu-sub-financial-services i {
+  font-size: 24px;
+  margin: 0 9px 0 8px;
+}
+.navigation-mobile .navigation-mobile-menu-nav .scrollable ul.sub li.mobile-menu-sub-financial-services i.vw-icon:before {
+  content: '\e80c';
+}
+.navigation-mobile .navigation-mobile-menu-nav .scrollable ul.sub li.mobile-menu-sub-corporate i {
+  font-size: 24px;
+  margin: 0 9px 0 8px;
+}
+.navigation-mobile .navigation-mobile-menu-nav .scrollable ul.sub li.mobile-menu-sub-corporate i.vw-icon:before {
+  content: '\e81b';
+}
+.navigation-mobile .navigation-mobile-menu-nav .scrollable .siteLanguage {
+  position: relative;
+  padding: 0 40px;
+  bottom: 75px;
+  margin-bottom: 45px;
+}
+.navigation-mobile .navigation-mobile-menu-nav .scrollable .siteLanguage a {
+  color: #808588;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+.navigation-mobile .navigation-mobile-menu-nav ul.bottom {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  display: -ms-flexbox;
+  /* IE10+ */
+
+  display: -webkit-flex;
+  /* Safari */
+
+  flex-direction: row;
+  justify-content: space-between;
+}
+.navigation-mobile .navigation-mobile-menu-nav ul.bottom li {
+  display: inline-block;
+  flex-grow: 1;
+}
+.navigation-mobile .navigation-mobile-menu-nav ul.bottom li a {
+  display: block;
+  height: 74px;
+  background-color: #01b1ec;
+  border-right: 1px solid white;
+  text-align: center;
+  color: white;
+  text-decoration: none;
+  font-family: "Black", sans-serif;
+  font-weight: normal;
+}
+.navigation-mobile .navigation-mobile-menu-nav ul.bottom li a i {
+  display: block;
+  font-size: 22px;
+  width: 36px;
+  margin: 0 auto;
+  padding-top: 15px;
+}
+.navigation-mobile .navigation-mobile-menu-nav ul.bottom li a span {
+  font-size: 12px;
+  text-transform: uppercase;
+}
+.navigation-mobile .navigation-mobile-menu-nav ul.bottom li.mobile-menu-bottom-estimate i {
+  font-size: 32px;
+  line-height: 20px;
+  width: 44px;
+  padding-top: 14px;
+  margin-bottom: -4px;
+}
+.navigation-mobile .navigation-mobile-menu-nav ul.bottom li.mobile-menu-bottom-estimate span {
+  top: -3px;
+}
+.navigation-mobile .navigation-mobile-menu-nav ul.bottom li:last-child a {
+  border: none;
+}
+.navigation-mobile .navigation-mobile-dealer-nav {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: calc(100vw - (64px + 50px));
+  height: 100vh;
+  z-index: 120;
+  background-color: #f1f5f6;
+  -webkit-transition: all 500ms ease;
+  -moz-transition: all 500ms ease;
+  -o-transition: all 500ms ease;
+  transition: all 500ms ease;
+  transform: translatex(100%);
+  padding: 25px;
+}
+.navigation-mobile .navigation-mobile-dealer-nav.visible {
+  transform: translatex(0);
+}
+.navigation-mobile .navigation-mobile-dealer-nav h5 {
+  margin: 0;
+  font-size: 24px;
+  font-family: "Black", sans-serif;
+  font-weight: normal;
+}
+.navigation-mobile .navigation-mobile-dealer-nav .zip {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 20px;
+  line-height: 42px;
+  font-family: "Black", sans-serif;
+  font-weight: normal;
+}
+.navigation-mobile .navigation-mobile-dealer-nav .zip a {
+  color: #009ddc;
+  text-decoration: none;
+}
+.navigation-mobile .navigation-mobile-dealer-nav .map {
+  height: 150px;
+  margin: 10px 0;
+  border: 5px solid white;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+}
+.navigation-mobile .navigation-mobile-dealer-nav .dealerName {
+  font-size: 16px;
+  margin: 0 0 5px 0;
+  display: block;
+  font-weight: bold;
+  font-family: "Black";
+}
+.navigation-mobile .navigation-mobile-dealer-nav .distance {
+  margin: 0;
+}
+.navigation-mobile .navigation-mobile-dealer-nav .address {
+  line-height: 22px;
+  margin-bottom: 20px;
+}
+.navigation-mobile .navigation-mobile-dealer-nav .address a {
+  color: #009ddc;
+  text-decoration: none;
+}
+.navigation-mobile .navigation-mobile-dealer-nav .actions .buttons {
+  width: 60%;
+  float: left;
+}
+.navigation-mobile .navigation-mobile-dealer-nav .actions .buttons a {
+  display: block;
+  background-color: white;
+  text-decoration: none;
+  color: #009ddc;
+  text-transform: uppercase;
+  padding: 10px;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 15px;
+  font-family: "Black", sans-serif;
+  font-weight: normal;
+  margin: 0 0 5px 0;
+}
+.navigation-mobile .navigation-mobile-dealer-nav .actions .call {
+  width: 40%;
+  float: right;
+}
+.navigation-mobile .navigation-mobile-dealer-nav .actions .call a {
+  display: block;
+  float: right;
+  width: 70px;
+  height: 70px;
+  color: white;
+  background-color: #009ddc;
+  border-radius: 70px;
+  font-size: 32px;
+  line-height: 70px;
+  text-align: center;
+}
+.navigation-mobile .navigation-mobile-dealer-nav .more-dealers {
+  position: absolute;
+  bottom: 50px;
+  right: 0;
+  width: 100%;
+  height: 50px;
+  color: white;
+  background-color: #009ddc;
+  text-align: center;
+  line-height: 50px;
+  font-size: 18px;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-family: "Black", sans-serif;
+  font-weight: normal;
+}
+.navigation-mobile .navigation-mobile-tint {
+  visibility: hidden;
+  opacity: 0;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 110;
+  background-color: rgba(0, 0, 0, 0.75);
+  -webkit-transition: all 500ms ease;
+  -moz-transition: all 500ms ease;
+  -o-transition: all 500ms ease;
+  transition: all 500ms ease;
+}
+.navigation-mobile .navigation-mobile-tint.visible {
+  visibility: visible;
+  opacity: 1;
+}
+.navigation-mobile .navigation-mobile-close {
+  visibility: hidden;
+  opacity: 0;
+  position: fixed;
+  top: 10px;
+  z-index: 120;
+  -webkit-transition: all 500ms ease;
+  -moz-transition: all 500ms ease;
+  -o-transition: all 500ms ease;
+  transition: all 500ms ease;
+}
+.navigation-mobile .navigation-mobile-close.visible {
+  visibility: visible;
+  opacity: 1;
+}
+.navigation-mobile .navigation-mobile-close.on-right {
+  right: 10px;
+}
+.navigation-mobile .navigation-mobile-close.on-left {
+  left: 10px;
+}
+.navigation-mobile .navigation-mobile-close i {
+  display: block;
+  width: 44px;
+  height: 44px;
+  font-size: 15px;
+  line-height: 44px;
+  text-align: center;
+  background-color: white;
+  color: #666;
+  border-radius: 44px;
+}
+.navigation {
+  position: relative;
+  z-index: 120;
+}
+.navigation .navigation-desktop {
+  display: none;
+}
+.navigation .navigation-mobile {
+  display: block;
+}
+@media (min-width: 768px) {
+  .navigation .navigation-desktop {
+    display: block;
+  }
+  .navigation .navigation-mobile {
+    display: none;
+  }
+}
+//mobile
+
+.navigation-mobile .navigation-mobile-top-nav {
+  *zoom: 1;
+  background-color: white;
+  height: 60px;
+  position: relative;
+  text-align: center;
+  width: 100%;
+  z-index: 100;
+}
+.navigation-mobile .navigation-mobile-top-nav:before,
+.navigation-mobile .navigation-mobile-top-nav:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.navigation-mobile .navigation-mobile-top-nav:after {
+  clear: both;
+}
+.siteNavHideMobile .navigation-mobile .navigation-mobile-top-nav {
+  transform: translatey(-100%);
+}
+.navigation-mobile .navigation-mobile-top-nav a {
+  color: #88979e;
+  display: inline-block;
+  height: 60px;
+  position: relative;
+  text-decoration: none;
+  width: 60px;
+}
+.navigation-mobile .navigation-mobile-top-nav a.vw-logo {
+  width: 33px;
+  height: 33px;
+  margin-top: 13.5px;
+  background: url('../img/vw-logo-only.png') no-repeat;
+  background-size: contain;
+}
+.navigation-mobile .navigation-mobile-top-nav a i {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translatex(-50%);
+}
+.navigation-mobile .navigation-mobile-top-nav a span {
+  font-weight: bold;
+  font-size: 9px;
+  text-transform: uppercase;
+  position: absolute;
+  bottom: 12px;
+  left: 50%;
+  transform: translatex(-50%);
+}
+.navigation-mobile .navigation-mobile-top-nav a.open-menu-nav {
+  float: left;
+}
+.navigation-mobile .navigation-mobile-top-nav a.open-menu-nav i {
+  font-size: 18px;
+  bottom: 28px;
+  left: 27px;
+}
+.navigation-mobile .navigation-mobile-top-nav a.open-dealer-nav {
+  float: right;
+}
+.navigation-mobile .navigation-mobile-top-nav a.open-dealer-nav i {
+  font-size: 30px;
+  line-height: 38px;
+}
+.navigation-mobile .navigation-mobile-menu-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: calc(100% - 64px);
+  height: 100%;
+  z-index: 120;
+  background-color: white;
+  -webkit-transition: all 500ms ease;
+  -moz-transition: all 500ms ease;
+  -o-transition: all 500ms ease;
+  transition: all 500ms ease;
+  transform: translatex(-100%);
+}
+.navigation-mobile .navigation-mobile-menu-nav.visible {
+  transform: translatex(0);
+}
+.navigation-mobile .navigation-mobile-menu-nav .scrollable {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow-y: auto;
+}
+.navigation-mobile .navigation-mobile-menu-nav .scrollable ul.main {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+.navigation-mobile .navigation-mobile-menu-nav .scrollable ul.main li a {
+  display: block;
+  font-size: 17px;
+  text-transform: uppercase;
+  border-bottom: 1px solid #EEE;
+  padding: 18px 14px;
+  text-decoration: none;
+  font-family: "Black", sans-serif;
+  font-weight: normal;
+  color: #808588;
+}
+.navigation-mobile .navigation-mobile-menu-nav .scrollable ul.main li a i {
+  width: 44px;
+  line-height: 44px;
+  font-size: 48px;
+  margin-right: 7px;
+}
+.navigation-mobile .navigation-mobile-menu-nav .scrollable ul.main li a span {
+  position: relative;
+  top: -10px;
+}
+.navigation-mobile .navigation-mobile-menu-nav .scrollable ul.main li.mobile-menu-main-home i {
+  display: inline-block;
+  height: 44px;
+  background: url('../img/vw-logo-with-title.png') no-repeat;
+  background-size: contain;
+  margin: 0 22px 0 10px;
+  position: relative;
+  top: 6px;
+  left: 6px;
+}
+.navigation-mobile .navigation-mobile-menu-nav .scrollable ul.main li.mobile-menu-main-models i.vw-icon:before {
+  content: '\e809';
+}
+.navigation-mobile .navigation-mobile-menu-nav .scrollable ul.main li.mobile-menu-main-find-match i.vw-icon:before {
+  content: '\e819';
+}
+.navigation-mobile .navigation-mobile-menu-nav .scrollable ul.main li.mobile-menu-main-find-match i.vw-icon {
+  font-size: 32px;
+  margin-right: 29px;
+}
+.navigation-mobile .navigation-mobile-menu-nav .scrollable ul.main li.mobile-menu-main-find-a-dealer i.vw-icon:before {
+  content: '\e81d';
+}
+.navigation-mobile .navigation-mobile-menu-nav .scrollable ul.main li.mobile-menu-main-builder i.vw-icon:before {
+  content: '\e80f';
+}
+.navigation-mobile .navigation-mobile-menu-nav .scrollable ul.main li.mobile-menu-main-owners i.vw-icon:before {
+  content: '\e811';
+}
+.navigation-mobile .navigation-mobile-menu-nav .scrollable ul.main li.mobile-menu-main-special-offers i.vw-icon:before {
+  content: '\e822';
+}
+.navigation-mobile .navigation-mobile-menu-nav .scrollable ul.main li.mobile-menu-main-builder i {
+  font-size: 34px;
+  line-height: 48px;
+  margin: 0 16px 0 10px;
+}
+.navigation-mobile .navigation-mobile-menu-nav .scrollable ul.main li.mobile-menu-main-builder span {
+  top: -3px;
+}
+.navigation-mobile .navigation-mobile-menu-nav .scrollable ul.main li.mobile-menu-main-special-offers i {
+  font-size: 29px;
+  line-height: 48px;
+  margin: 0 22px 0 10px;
+}
+.navigation-mobile .navigation-mobile-menu-nav .scrollable ul.main li.mobile-menu-main-special-offers span {
+  top: -3px;
+}
+.navigation-mobile .navigation-mobile-menu-nav .scrollable ul.sub {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  background-color: #EEE;
+  padding: 20px 20px 100px 20px;
+}
+.navigation-mobile .navigation-mobile-menu-nav .scrollable ul.sub li a {
+  display: block;
+  font-size: 13px;
+  font-family: "Black", sans-serif;
+  font-weight: normal;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #808588;
+  padding: 10px 0;
+}
+.navigation-mobile .navigation-mobile-menu-nav .scrollable ul.sub li a i {
+  width: 36px;
+  height: 36px;
+  font-size: 32px;
+  line-height: 20px;
+  margin-left: 5px;
+}
+.navigation-mobile .navigation-mobile-menu-nav .scrollable ul.sub li a span {
+  position: relative;
+  top: -5px;
+}
+.navigation-mobile .navigation-mobile-menu-nav .scrollable ul.sub li.mobile-menu-sub-contact i.vw-icon:before {
+  content: '\e81c';
+}
+.navigation-mobile .navigation-mobile-menu-nav .scrollable ul.sub li.mobile-menu-sub-newsroom i {
+  font-size: 24px;
+  margin: 0 9px 0 8px;
+}
+.navigation-mobile .navigation-mobile-menu-nav .scrollable ul.sub li.mobile-menu-sub-newsroom i.vw-icon:before {
+  content: '\e81b';
+}
+.navigation-mobile .navigation-mobile-menu-nav .scrollable ul.sub li.mobile-menu-sub-me i {
+  font-size: 24px;
+  margin: 0 6px 0 12px;
+}
+.navigation-mobile .navigation-mobile-menu-nav .scrollable ul.sub li.mobile-menu-sub-me i.vw-icon:before {
+  content: '\e818';
+}
+.navigation-mobile .navigation-mobile-menu-nav .scrollable ul.sub li.mobile-menu-sub-financial-services i {
+  font-size: 24px;
+  margin: 0 9px 0 8px;
+}
+.navigation-mobile .navigation-mobile-menu-nav .scrollable ul.sub li.mobile-menu-sub-financial-services i.vw-icon:before {
+  content: '\e80c';
+}
+.navigation-mobile .navigation-mobile-menu-nav .scrollable ul.sub li.mobile-menu-sub-corporate i {
+  font-size: 24px;
+  margin: 0 9px 0 8px;
+}
+.navigation-mobile .navigation-mobile-menu-nav .scrollable ul.sub li.mobile-menu-sub-corporate i.vw-icon:before {
+  content: '\e81b';
+}
+.navigation-mobile .navigation-mobile-menu-nav .scrollable .siteLanguage {
+  position: relative;
+  padding: 0 40px;
+  bottom: 75px;
+  margin-bottom: 45px;
+}
+.navigation-mobile .navigation-mobile-menu-nav .scrollable .siteLanguage a {
+  color: #808588;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+.navigation-mobile .navigation-mobile-menu-nav ul.bottom {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  display: -ms-flexbox;
+  /* IE10+ */
+
+  display: -webkit-flex;
+  /* Safari */
+
+  flex-direction: row;
+  justify-content: space-between;
+}
+.navigation-mobile .navigation-mobile-menu-nav ul.bottom li {
+  display: inline-block;
+  flex-grow: 1;
+}
+.navigation-mobile .navigation-mobile-menu-nav ul.bottom li a {
+  display: block;
+  height: 74px;
+  background-color: #01b1ec;
+  border-right: 1px solid white;
+  text-align: center;
+  color: white;
+  text-decoration: none;
+  font-family: "Black", sans-serif;
+  font-weight: normal;
+}
+.navigation-mobile .navigation-mobile-menu-nav ul.bottom li a i {
+  display: block;
+  font-size: 22px;
+  width: 36px;
+  margin: 0 auto;
+  padding-top: 15px;
+}
+.navigation-mobile .navigation-mobile-menu-nav ul.bottom li a span {
+  font-size: 12px;
+  text-transform: uppercase;
+}
+.navigation-mobile .navigation-mobile-menu-nav ul.bottom li.mobile-menu-bottom-estimate i {
+  font-size: 32px;
+  line-height: 20px;
+  width: 44px;
+  padding-top: 14px;
+  margin-bottom: -4px;
+}
+.navigation-mobile .navigation-mobile-menu-nav ul.bottom li.mobile-menu-bottom-estimate span {
+  top: -3px;
+}
+.navigation-mobile .navigation-mobile-menu-nav ul.bottom li:last-child a {
+  border: none;
+}
+.navigation-mobile .navigation-mobile-dealer-nav {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: calc(100vw - (64px + 50px));
+  height: 100vh;
+  z-index: 120;
+  background-color: #f1f5f6;
+  -webkit-transition: all 500ms ease;
+  -moz-transition: all 500ms ease;
+  -o-transition: all 500ms ease;
+  transition: all 500ms ease;
+  transform: translatex(100%);
+  padding: 25px;
+}
+.navigation-mobile .navigation-mobile-dealer-nav.visible {
+  transform: translatex(0);
+}
+.navigation-mobile .navigation-mobile-dealer-nav h5 {
+  margin: 0;
+  font-size: 24px;
+  font-family: "Black", sans-serif;
+  font-weight: normal;
+}
+.navigation-mobile .navigation-mobile-dealer-nav .zip {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 20px;
+  line-height: 42px;
+  font-family: "Black", sans-serif;
+  font-weight: normal;
+}
+.navigation-mobile .navigation-mobile-dealer-nav .zip a {
+  color: #009ddc;
+  text-decoration: none;
+}
+.navigation-mobile .navigation-mobile-dealer-nav .map {
+  height: 150px;
+  margin: 10px 0;
+  border: 5px solid white;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+}
+.navigation-mobile .navigation-mobile-dealer-nav .dealerName {
+  font-size: 16px;
+  margin: 0 0 5px 0;
+  display: block;
+  font-weight: bold;
+  font-family: "Black";
+}
+.navigation-mobile .navigation-mobile-dealer-nav .distance {
+  margin: 0;
+}
+.navigation-mobile .navigation-mobile-dealer-nav .address {
+  line-height: 22px;
+  margin-bottom: 20px;
+}
+.navigation-mobile .navigation-mobile-dealer-nav .address a {
+  color: #009ddc;
+  text-decoration: none;
+}
+.navigation-mobile .navigation-mobile-dealer-nav .actions .buttons {
+  width: 60%;
+  float: left;
+}
+.navigation-mobile .navigation-mobile-dealer-nav .actions .buttons a {
+  display: block;
+  background-color: white;
+  text-decoration: none;
+  color: #009ddc;
+  text-transform: uppercase;
+  padding: 10px;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 15px;
+  font-family: "Black", sans-serif;
+  font-weight: normal;
+  margin: 0 0 5px 0;
+}
+.navigation-mobile .navigation-mobile-dealer-nav .actions .call {
+  width: 40%;
+  float: right;
+}
+.navigation-mobile .navigation-mobile-dealer-nav .actions .call a {
+  display: block;
+  float: right;
+  width: 70px;
+  height: 70px;
+  color: white;
+  background-color: #009ddc;
+  border-radius: 70px;
+  font-size: 32px;
+  line-height: 70px;
+  text-align: center;
+}
+.navigation-mobile .navigation-mobile-dealer-nav .more-dealers {
+  position: absolute;
+  bottom: 50px;
+  right: 0;
+  width: 100%;
+  height: 50px;
+  color: white;
+  background-color: #009ddc;
+  text-align: center;
+  line-height: 50px;
+  font-size: 18px;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-family: "Black", sans-serif;
+  font-weight: normal;
+}
+.navigation-mobile .navigation-mobile-tint {
+  visibility: hidden;
+  opacity: 0;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 110;
+  background-color: rgba(0, 0, 0, 0.75);
+  -webkit-transition: all 500ms ease;
+  -moz-transition: all 500ms ease;
+  -o-transition: all 500ms ease;
+  transition: all 500ms ease;
+}
+.navigation-mobile .navigation-mobile-tint.visible {
+  visibility: visible;
+  opacity: 1;
+}
+.navigation-mobile .navigation-mobile-close {
+  visibility: hidden;
+  opacity: 0;
+  position: fixed;
+  top: 10px;
+  z-index: 120;
+  -webkit-transition: all 500ms ease;
+  -moz-transition: all 500ms ease;
+  -o-transition: all 500ms ease;
+  transition: all 500ms ease;
+}
+.navigation-mobile .navigation-mobile-close.visible {
+  visibility: visible;
+  opacity: 1;
+}
+.navigation-mobile .navigation-mobile-close.on-right {
+  right: 10px;
+}
+.navigation-mobile .navigation-mobile-close.on-left {
+  left: 10px;
+}
+.navigation-mobile .navigation-mobile-close i {
+  display: block;
+  width: 44px;
+  height: 44px;
+  font-size: 15px;
+  line-height: 44px;
+  text-align: center;
+  background-color: white;
+  color: #666;
+  border-radius: 44px;
+}
+.navigation {
+  position: relative;
+  z-index: 120;
+}
+.navigation .navigation-desktop {
+  display: none;
+}
+.navigation .navigation-mobile {
+  display: block;
+}
+@media (min-width: 768px) {
+  .navigation .navigation-desktop {
+    display: block;
+  }
+  .navigation .navigation-mobile {
+    display: none;
+  }
+}
+
+.open-menu-nav {
+  position: relative;
+  width: 54px;
+  height: 50px;
+  background: url(../img/navIcons_mobile_2x.png) no-repeat;
+  background-position: -398px -71px;
+  background-size: 900px;
+  margin-bottom: -2px;
+}
+
+.open-dealer-nav {
+  position: relative;
+  width: 54px;
+  height: 50px;
+  background: url(../img/navIcons_mobile_2x.png) no-repeat;
+  background-position: -396px -135px;
+  background-size: 900px;
+  margin-bottom: -2px;
+}

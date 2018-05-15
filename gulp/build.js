@@ -26,7 +26,7 @@ gulp.task('build_html', () => {
         .pipe(gulp.dest(global.paths.dist));
 });
 
-// build images for distribution
+// build img for distribution
 gulp.task('build_img', () => {
     gulp.src(global.paths.img)
         .pipe(imagemin({
