@@ -27,7 +27,7 @@ gulp.task('scripts', () => {
         .pipe(source(`${global.paths.src}/js/main.js`))
         .pipe(buffer())
         .pipe(sourcemaps.init())
-        .pipe(concat('script.js'))
+        .pipe(concat('js/script.js'))
         .pipe(sourcemaps.write('./'))
         .pipe(gulp.dest(global.paths.src));
 });

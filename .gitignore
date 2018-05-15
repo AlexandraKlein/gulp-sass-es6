@@ -4,3 +4,5 @@ css/
 *.log
 .sass-cache/
 .idea
+src/js/script.js
+src/js/script.js.map

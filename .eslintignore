@@ -3,3 +3,4 @@ gulp/
 .esdoc.json
 gulpfile.babel.js
 package.json
+src/js/script.js
