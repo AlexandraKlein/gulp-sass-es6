@@ -24,7 +24,10 @@ body, p {
 
 //colors
 $white: #fff;
+$black: #000;
 $black_15: rgba(0, 0, 0, 0.15);
+$black_75: rgba(0, 0, 0, 0.75);
+
 $color_mystic_approx: #e7eaec;
 $color_black_haze_approx: #f7f7f7;
 $color_cerulean_approx: #01b1ec;
@@ -43,8 +46,6 @@ $color_star_dust_approx: #9a9a9c;
 $color_dove_gray_approx: #6d6e72;
 $color_mirage_approx: #1b1d20;
 $color_chicago_approx: #5f5f5f;
-$black_90: rgba(0, 0, 0, 0.9);
-$black: black;
 
 .vw-icon:before {
   font-family: "vw-icons";
