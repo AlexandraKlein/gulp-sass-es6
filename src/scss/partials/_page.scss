@@ -1,0 +1,42 @@
+body #mainWrapper {
+  background-color: #ffffff;
+  margin-left: 95px;
+  min-height: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.pageSection .layout-container {
+  text-align: left;
+  width: 86.13%;
+  margin: auto;
+}
+
+@media (min-width: 768px) {
+  .pageSection .layout-container {
+    width: 89.88%;
+  }
+
+}
+@media (min-width: 1024px) {
+  .pageSection .layout-container {
+    width: 87.50%;
+  }
+}
+
+@media (min-width: 1280px) {
+  .pageSection .layout-container {
+    width: 88.17%;
+  }
+
+}
+@media (min-width: 1440px) {
+  .pageSection .layout-container {
+    width: 86.30%;
+    max-width: 1160px;
+  }
+
+}
+.pageSection .layout-container .expand-container {
+  min-width: 100%;
+}
