@@ -8,7 +8,7 @@ import replace from 'gulp-replace';
 import runSeq from 'run-sequence';
 
 gulp.task('build', (done) => {
-    runSeq('clean', ['build_sass', 'build_img', 'build_js'], 'build_html', done);
+    runSeq('clean', ['build_sass', 'build_img', 'build_fonts', 'build_js'], 'build_html', done);
 });
 
 // build SASS for distribution
@@ -35,4 +35,10 @@ gulp.task('build_img', () => {
             use: [pngquant()]
         }))
         .pipe(gulp.dest(`${global.paths.dist}/img`));
+});
+
+// build fonts for distribution
+gulp.task('build_fonts', () => {
+    gulp.src(global.paths.fonts)
+      .pipe(gulp.dest(`${global.paths.dist}/fonts`));
 });
