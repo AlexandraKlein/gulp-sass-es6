@@ -1,9 +1,14 @@
 body #mainWrapper {
   background-color: #ffffff;
-  margin-left: 95px;
   min-height: 100%;
   overflow: hidden;
   position: relative;
+}
+
+@media (min-width: 768px) {
+  #mainWrapper {
+    margin-left: 95px;
+  }
 }
 
 .pageSection .layout-container {

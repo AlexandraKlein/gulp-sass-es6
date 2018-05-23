@@ -1,1 +1,267 @@
+@each $font-face in VWTextWeb-Regular, VWTextWeb-Bold, VWHeadWeb-Regular, VWHeadWeb-Regular, vw-icons {
+  @font-face {
+    font-family: $font-face; font-style: normal; font-weight: normal;
+    src: url('../fonts/#{$font-face}.eot');
+    src: url('../fonts/#{$font-face}.eot?') format('eot'),
+    url('../fonts/#{$font-face}.woff') format('woff'),
+    url('../fonts/#{$font-face}.ttf')  format('truetype');
+  }
+}
 
+@mixin font($font, $style: normal, $weight: normal) {
+  font-family: $font, sans-serif;
+  font-style:  $style;
+  font-weight: $weight;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: VWHeadWeb-Bold;
+}
+
+body, p {
+  font-family: VWTextWeb-Regular;
+}
+
+//colors
+$white: #fff;
+$black_15: rgba(0, 0, 0, 0.15);
+$color_mystic_approx: #e7eaec;
+$color_black_haze_approx: #f7f7f7;
+$color_cerulean_approx: #01b1ec;
+$color_rolling_stone_approx: #768188;
+$color_gallery_approx: #eee;
+$color_quill_gray_approx: #d5d5d5;
+$color_gunsmoke_approx: #808588;
+$color_tundora_approx: #444;
+$color_catskill_white_approx: #f1f5f6;
+$color_mine_shaft_approx: #333333;
+$color_snow_drift_approx: #f8faf9;
+$color_regent_gray_approx: #88979e;
+$black_90: rgba(0, 0, 0, 0.9);
+$black: black;
+
+
+.vw-icon:before {
+  font-family: "vw-icons";
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: .2em;
+  text-align: center;
+
+  font-variant: normal;
+  text-transform: none;
+  /* fix buttons height, for twitter bootstrap */
+
+  line-height: 1em;
+  /* Animation center compensation - margins should be symmetric */
+
+  /* remove if not needed */
+
+  margin-left: .2em;
+  /* you can be more comfortable with increased icons size */
+
+  /* font-size: 120%; */
+
+  /* Font smoothing. That was taken from TWBS */
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  /* Uncomment for 3D effect */
+
+  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+
+  font-family: "vw-icons";
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: .2em;
+  text-align: center;
+  /* opacity: .8; */
+
+  /* For safety - reset parent styles, that can break glyph codes*/
+
+  font-variant: normal;
+  text-transform: none;
+  /* fix buttons height, for twitter bootstrap */
+
+  line-height: 1em;
+  /* Animation center compensation - margins should be symmetric */
+
+  /* remove if not needed */
+
+  margin-left: .2em;
+  /* you can be more comfortable with increased icons size */
+
+  /* font-size: 120%; */
+
+  /* Font smoothing. That was taken from TWBS */
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  /* Uncomment for 3D effect */
+
+  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+}
+.vw-icon.vw-icon-hide-true {
+  display: none !important;
+}
+/* ===== DO NOT REPLACE CODE ABOVE ===== */
+/* ===== REPLACE MAPPING BELOW FROM FONTELLO ===== */
+.vw-icon-arrow-open-down.vw-icon:before {
+  content: '\e800';
+}
+/* 'î €' */
+.vw-icon-arrow-solid-left-right.vw-icon:before {
+  content: '\e801';
+}
+/* 'î ' */
+.vw-icon-arrowhead-left-right.vw-icon:before {
+  content: '\e802';
+}
+/* 'î ‚' */
+.vw-icon-arrowhead-thick-left.vw-icon:before {
+  content: '\e803';
+}
+/* 'î ƒ' */
+.vw-icon-arrowhead-thick-right.vw-icon:before {
+  content: '\e804';
+}
+/* 'î „' */
+.vw-icon-arrowhead-thin-right.vw-icon:before {
+  content: '\e805';
+}
+/* 'î …' */
+.vw-icon-asterisk.vw-icon:before {
+  content: '\e806';
+}
+/* 'î †' */
+.vw-icon-brochure.vw-icon:before {
+  content: '\e807';
+}
+/* 'î ‡' */
+.vw-icon-calculator.vw-icon:before {
+  content: '\e808';
+}
+/* 'î ˆ' */
+.vw-icon-car.vw-icon:before {
+  content: '\e809';
+}
+/* 'î ‰' */
+.vw-icon-caret-double.vw-icon:before {
+  content: '\e80a';
+}
+/* 'î Š' */
+.vw-icon-caron-single.vw-icon:before {
+  content: '\e80b';
+}
+/* 'î ‹' */
+.vw-icon-dollar.vw-icon:before {
+  content: '\e80c';
+}
+/* 'î Œ' */
+.vw-icon-ellipsis.vw-icon:before {
+  content: '\e80d';
+}
+/* 'î ' */
+.vw-icon-eye-open.vw-icon:before {
+  content: '\e80e';
+}
+/* 'î Ž' */
+.vw-icon-gear.vw-icon:before {
+  content: '\e80f';
+}
+/* 'î ' */
+.vw-icon-heart-with-magnifier.vw-icon:before {
+  content: '\e810';
+}
+/* 'î ' */
+.vw-icon-key.vw-icon:before {
+  content: '\e811';
+}
+/* 'î ‘' */
+.vw-icon-left-align.vw-icon:before {
+  content: '\e812';
+}
+/* 'î ’' */
+.vw-icon-logo-facebook.vw-icon:before {
+  content: '\e813';
+}
+/* 'î “' */
+.vw-icon-logo-instagram.vw-icon:before {
+  content: '\e814';
+}
+/* 'î ”' */
+.vw-icon-logo-pinterest.vw-icon:before {
+  content: '\e815';
+}
+/* 'î •' */
+.vw-icon-logo-twitter.vw-icon:before {
+  content: '\e816';
+}
+/* 'î –' */
+.vw-icon-logo-youtube.vw-icon:before {
+  content: '\e817';
+}
+/* 'î —' */
+.vw-icon-star.vw-icon:before {
+  content: '\e818';
+}
+/* 'î ˜' */
+.vw-icon-magnifier.vw-icon:before {
+  content: '\e819';
+}
+/* 'î ™' */
+.vw-icon-menu.vw-icon:before {
+  content: '\e81a';
+}
+/* 'î š' */
+.vw-icon-news.vw-icon:before {
+  content: '\e81b';
+}
+/* 'î ›' */
+.vw-icon-phone.vw-icon:before {
+  content: '\e81c';
+}
+/* 'î œ' */
+.vw-icon-pin.vw-icon:before {
+  content: '\e81d';
+}
+/* 'î ' */
+.vw-icon-play.vw-icon:before {
+  content: '\e81e';
+}
+/* 'î ž' */
+.vw-icon-plus.vw-icon:before {
+  content: '\e81f';
+}
+/* 'î Ÿ' */
+.vw-icon-snowflake.vw-icon:before {
+  content: '\e820';
+}
+/* 'î  ' */
+.vw-icon-steering-wheel.vw-icon:before {
+  content: '\e821';
+}
+/* 'î ¡' */
+.vw-icon-tag.vw-icon:before {
+  content: '\e822';
+}
+/* 'î ¢' */
+.vw-icon-wheel.vw-icon:before {
+  content: '\e823';
+}
+/* 'î £' */
+.vw-icon-x-thick.vw-icon:before {
+  content: '\e824';
+}
+/* 'î ¤' */
+.vw-icon-x-thin.vw-icon:before {
+  content: '\e825';
+}
