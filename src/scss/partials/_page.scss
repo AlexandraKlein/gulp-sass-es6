@@ -1,4 +1,11 @@
-body #mainWrapper {
+html,
+body {
+  margin:0;
+  padding:0;
+  height:100%;
+}
+
+#mainWrapper {
   background-color: #ffffff;
   min-height: 100%;
   overflow: hidden;
